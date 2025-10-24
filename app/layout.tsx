@@ -19,7 +19,8 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className="bg-slate-900 text-white">
         <Header />
-        <main className="min-h-screen pt-24">{children}</main>
+        {/* Espaço responsivo: maior em telas grandes, menor em mobile */}
+        <main className="pt-28 md:pt-32 pb-16">{children}</main>
         <Footer />
       </body>
     </html>
