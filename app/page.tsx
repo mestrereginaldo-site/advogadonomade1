@@ -25,13 +25,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MENU ESCURO (igual ao atual, mas com letras brancas e destaque) */}
+      {/* MENU ESCURO (topo fixo, só na home) */}
       <nav className="w-full bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
         <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+          {/* Logo branca, fonte elegante */}
           <Link href="/" className="text-2xl font-extrabold tracking-tight text-white">
             Advogado Nômade
           </Link>
 
+          {/* Links brancos, hover verde */}
           <div className="hidden md:flex gap-6 text-base font-semibold text-white">
             <Link href="/" className="hover:text-green-400">Início</Link>
             <Link href="/artigos" className="hover:text-green-400">Artigos</Link>
@@ -48,9 +50,7 @@ export default function Home() {
       <section className="w-full bg-white text-black">
         <div className="max-w-5xl mx-auto px-4 py-16">
           <h2 className="text-3xl font-bold mb-4">Bem-vindo ao Advogado Nômade</h2>
-          <p className="mb-4">
-            Em breve: artigos, calculadoras, consultoria jurídica e muito mais.
-          </p>
+          <p className="mb-4">Em breve: artigos, calculadoras, consultoria jurídica e muito mais.</p>
         </div>
       </section>
 
