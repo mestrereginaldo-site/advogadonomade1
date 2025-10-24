@@ -7,35 +7,31 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full fixed top-0 left-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+    <header className="w-full fixed top-0 left-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="text-xl font-bold text-green-400">
+        {/* Logo - fonte elegante + branco */}
+        <Link href="/" className="text-2xl font-extrabold tracking-tight text-black">
           Advogado Nômade
         </Link>
 
-        {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center gap-6 text-sm">
-          <Link href="/" className="text-white hover:text-green-400">
-            Início
-          </Link>
-          <Link href="/blog" className="text-white hover:text-green-400">
-            Blog
-          </Link>
-          <Link href="/contratar" className="text-white hover:text-green-400">
-            Contratar
-          </Link>
+        {/* Desktop Menu - fonte limpa e moderna */}
+        <nav className="hidden md:flex items-center gap-6 text-base text-black font-medium">
+          <Link href="/" className="hover:text-green-600">Início</Link>
+          <Link href="/artigos" className="hover:text-green-600">Artigos</Link>
+          <Link href="/blog" className="hover:text-green-600">Blog</Link>
+          <Link href="/consultoria" className="hover:text-green-600">Consultoria Premium</Link>
+          <Link href="/contato" className="hover:text-green-600">Contato</Link>
           <Link
             href="https://wa.me/5588999999999?text=Quero%20falar%20com%20um%20advogado"
-            className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded font-semibold text-white"
+            className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-white font-semibold"
           >
             WhatsApp
           </Link>
         </nav>
 
-        {/* Mobile Hamburger */}
+        {/* Mobile Hambúrguer */}
         <button
-          className="md:hidden text-white text-2xl"
+          className="md:hidden text-black text-2xl"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menu"
         >
@@ -45,19 +41,15 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-2 text-sm">
-          <Link href="/" className="block text-white hover:text-green-400">
-            Início
-          </Link>
-          <Link href="/blog" className="block text-white hover:text-green-400">
-            Blog
-          </Link>
-          <Link href="/contratar" className="block text-white hover:text-green-400">
-            Contratar
-          </Link>
+        <div className="md:hidden px-4 pb-4 space-y-2 text-base text-black font-medium">
+          <Link href="/" className="block hover:text-green-600">Início</Link>
+          <Link href="/artigos" className="block hover:text-green-600">Artigos</Link>
+          <Link href="/blog" className="block hover:text-green-600">Blog</Link>
+          <Link href="/consultoria" className="block hover:text-green-600">Consultoria Premium</Link>
+          <Link href="/contato" className="block hover:text-green-600">Contato</Link>
           <Link
             href="https://wa.me/5588999999999?text=Quero%20falar%20com%20um%20advogado"
-            className="block bg-green-500 hover:bg-green-600 px-4 py-2 rounded font-semibold text-white"
+            className="block bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-white font-semibold"
           >
             WhatsApp
           </Link>
