@@ -8,7 +8,8 @@ export const metadata = {
 
 export default function Post() {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-8 text-slate-800">
+   <main className="min-h-screen bg-slate-900 text-white px-4 py-8">
+  <div className="max-w-3xl mx-auto prose prose-invert prose-green">
       <header className="mb-6">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           Modelo de Contrato para Influencer Digital (Grátis)
