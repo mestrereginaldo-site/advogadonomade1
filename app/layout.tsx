@@ -12,15 +12,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR">
       <body className="min-h-screen flex flex-col bg-white text-black">
-        {/* HEADER ESCURO (menu global) */}
+        {/* HEADER ESCURO (global) */}
         <header className="w-full bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-            {/* Logo branca, fonte elegante */}
             <Link href="/" className="text-2xl font-extrabold tracking-tight text-white">
               Advogado Nômade
             </Link>
-
-            {/* Links brancos, hover verde */}
             <nav className="hidden md:flex gap-6 text-base font-semibold text-white">
               <Link href="/" className="hover:text-green-400">Início</Link>
               <Link href="/artigos" className="hover:text-green-400">Artigos</Link>
@@ -28,15 +25,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/consultoria" className="hover:text-green-400">Consultoria Premium</Link>
               <Link href="/contato" className="hover:text-green-400">Contato</Link>
             </nav>
-
             <div className="md:hidden text-white text-2xl">☰</div>
           </div>
         </header>
 
-        {/* CONTEÚDO DAS PÁGINAS (fundo branco) */}
+        {/* CONTEÚDO DA PÁGINA (vazio aqui – o conteúdo vem de app/page.tsx) */}
         <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-8 bg-white text-black">{children}</main>
 
-        {/* FOOTER ESCURO (mesma cor do header) */}
+        {/* FOOTER ESCURO (global) */}
         <footer className="w-full bg-slate-900 border-t border-slate-800 text-white">
           <div className="max-w-5xl mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
             <div>
@@ -71,12 +67,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </footer>
 
-        {/* BOTÃO WHATSAPP FLUTUANTE (rodapé da página) */}
+        {/* BOTÃO WHATSAPP FLUTUANTE (global) */}
         <div className="fixed bottom-4 right-4 z-50">
-          <a
-            href="https://wa.me/5588999999999?text=Preciso%20de%20um%20advogado%20agora"
-            className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-full shadow-lg"
-          >
+          <a href="https://wa.me/5588999999999?text=Preciso%20de%20um%20advogado%20agora" className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-full shadow-lg">
             WhatsApp
           </a>
         </div>
