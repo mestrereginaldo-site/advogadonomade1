@@ -18,6 +18,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="text-2xl font-extrabold tracking-tight text-white">
               Advogado Nômade
             </Link>
+
+            {/* DESKTOP MENU */}
             <nav className="hidden md:flex gap-6 text-base font-semibold text-white">
               <Link href="/" className="hover:text-green-400">Início</Link>
               <Link href="/artigos" className="hover:text-green-400">Artigos</Link>
@@ -25,11 +27,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/consultoria" className="hover:text-green-400">Consultoria Premium</Link>
               <Link href="/contato" className="hover:text-green-400">Contato</Link>
             </nav>
-            <div className="md:hidden text-white text-2xl">☰</div>
+
+            {/* MOBILE HAMBÚRGUER FUNCIONAL */}
+            <div className="md:hidden relative">
+              <MobileMenu />
+            </div>
           </div>
         </header>
 
-        {/* CONTEÚDO DA PÁGINA (vazio aqui – o conteúdo vem de app/page.tsx) */}
         <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-8 bg-white text-black">{children}</main>
 
         {/* FOOTER ESCURO (global) */}
@@ -50,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ul className="space-y-1">
                 <li><Link href="/politica-de-privacidade" className="text-white hover:text-green-400">Privacidade</Link></li>
                 <li><Link href="/termos-de-uso" className="text-white hover:text-green-400">Termos</Link></li>
+                <li><Link href="/cookies" className="text-white hover:text-green-400">Cookies</Link></li>
               </ul>
             </div>
             <div>
@@ -76,4 +82,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </body>
     </html>
   );
+}
+
+/* COMPONENTE MENU MOBILE (hambúrguer funcional) */
+function MobileMenu() {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      <button onClick={() => setOpen(!open)} className="text-white text-2xl">☰</button>
+      {open && (
+        <div className="absolute top-full right-0 mt-2 w-48 bg-slate-800 border border-slate-700 rounded p-4 space-y-2 text-sm text-white">
+          <Link href="/" onClick={() => setOpen(false)} className="block hover:text-green-400">Início</Link>
+          <Link href="/artigos" onClick={() => setOpen(false)} className="block hover:text-green-400">Artigos</Link>
+          <Link href="/blog" onClick={() => setOpen(false)} className="block hover:text-green-400">Blog</Link>
+          <Link href="/consultoria" onClick={() => setOpen(false)} className="block hover:text-green-400">Consultoria Premium</Link>
+          <Link href="/contato" onClick={() => setOpen(false)} className="block hover:text-green-400">Contato</Link>
+        </div>
+      )}
 }
