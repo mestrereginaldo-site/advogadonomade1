@@ -17,18 +17,18 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-6 text-sm">
-          <Link href="/" className="hover:text-green-400 transition">
+          <Link href="/" className="text-white hover:text-green-400 transition">
             Início
           </Link>
-          <Link href="/blog" className="hover:text-green-400 transition">
+          <Link href="/blog" className="text-white hover:text-green-400 transition">
             Blog
           </Link>
-          <Link href="/contratar" className="hover:text-green-400 transition">
+          <Link href="/contratar" className="text-white hover:text-green-400 transition">
             Contratar
           </Link>
           <Link
             href="https://wa.me/5588999999999?text=Quero%20falar%20com%20um%20advogado"
-            className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded font-semibold"
+            className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded font-semibold text-white"
           >
             WhatsApp
           </Link>
@@ -36,7 +36,7 @@ export default function Header() {
 
         {/* Mobile Hamburger */}
         <button
-          className="md:hidden text-2xl"
+          className="md:hidden text-white text-2xl"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menu"
         >
@@ -47,18 +47,18 @@ export default function Header() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2 text-sm">
-          <Link href="/" className="block hover:text-green-400">
+          <Link href="/" className="block text-white hover:text-green-400">
             Início
           </Link>
-          <Link href="/blog" className="block hover:text-green-400">
+          <Link href="/blog" className="block text-white hover:text-green-400">
             Blog
           </Link>
-          <Link href="/contratar" className="block hover:text-green-400">
+          <Link href="/contratar" className="block text-white hover:text-green-400">
             Contratar
           </Link>
           <Link
             href="https://wa.me/5588999999999?text=Quero%20falar%20com%20um%20advogado"
-            className="block bg-green-500 hover:bg-green-600 px-4 py-2 rounded font-semibold"
+            className="block bg-green-500 hover:bg-green-600 px-4 py-2 rounded font-semibold text-white"
           >
             WhatsApp
           </Link>
