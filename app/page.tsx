@@ -1,4 +1,4 @@
-// app/page.tsx
+"use client";
 import Link from "next/link";
 
 export default function Home() {
@@ -25,26 +25,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MENU BRANCO (depois do banner) */}
-      <nav className="w-full bg-white border-b border-gray-200 sticky top-0 z-50">
+      {/* MENU ESCURO (igual ao atual, mas com letras brancas e destaque) */}
+      <nav className="w-full bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
         <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-          <span className="text-xl font-extrabold tracking-tight text-black">
+          <Link href="/" className="text-2xl font-extrabold tracking-tight text-white">
             Advogado Nômade
-          </span>
+          </Link>
 
-          <div className="hidden md:flex gap-6 text-base text-black font-medium">
-            <Link href="/" className="hover:text-green-600">Início</Link>
-            <Link href="/artigos" className="hover:text-green-600">Artigos</Link>
-            <Link href="/blog" className="hover:text-green-600">Blog</Link>
-            <Link href="/consultoria" className="hover:text-green-600">Consultoria Premium</Link>
-            <Link href="/contato" className="hover:text-green-600">Contato</Link>
+          <div className="hidden md:flex gap-6 text-base font-semibold text-white">
+            <Link href="/" className="hover:text-green-400">Início</Link>
+            <Link href="/artigos" className="hover:text-green-400">Artigos</Link>
+            <Link href="/blog" className="hover:text-green-400">Blog</Link>
+            <Link href="/consultoria" className="hover:text-green-400">Consultoria Premium</Link>
+            <Link href="/contato" className="hover:text-green-400">Contato</Link>
           </div>
 
-          <div className="md:hidden text-black text-2xl">☰</div>
+          <div className="md:hidden text-white text-2xl">☰</div>
         </div>
       </nav>
 
-      {/* CORPO BRANCO (vazio para você preencher) */}
+      {/* CORPO BRANCO (depois do menu) */}
       <section className="w-full bg-white text-black">
         <div className="max-w-5xl mx-auto px-4 py-16">
           <h2 className="text-3xl font-bold mb-4">Bem-vindo ao Advogado Nômade</h2>
@@ -54,13 +54,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MENU FLUTUANTE NO RODAPÉ (WhatsApp) */}
+      {/* BOTÃO WHATSAPP FLUTUANTE (rodapé da página) */}
       <div className="fixed bottom-4 right-4 z-50">
         <Link
           href="https://wa.me/5588999999999?text=Preciso%20de%20um%20advogado%20agora"
           className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-full shadow-lg"
         >
-          <span>WhatsApp</span>
+          WhatsApp
         </Link>
       </div>
     </>
