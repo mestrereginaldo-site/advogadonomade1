@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <h3 className="font-bold text-green-400 mb-2">Contato</h3>
               <ul className="space-y-1">
                 <li>Dr. Reginaldo Oliveira</li>
-                <li>OAB/AL 12345</li>
+                <li>OAB/SC 57.879</li>
                 <li><a href="https://wa.me/5588999999999" className="text-white hover:text-green-400">88 99999-9999</a></li>
               </ul>
             </div>
