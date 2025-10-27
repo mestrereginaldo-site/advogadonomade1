@@ -59,7 +59,7 @@ export default function OndeEstou() {
         </div>
 
         {/* ATUALIZAÇÃO MANUAL (opcional) */}
-        <section className="mt-10 p-6 border border-gray-300 rounded bg-gray-50">
+        <div className="mt-10 p-6 border border-gray-300 rounded bg-gray-50">
           <h3 className="text-lg font-semibold mb-2">Atualização manual</h3>
           <p className="text-sm mb-4">
             Envie um WhatsApp com sua cidade e eu atualizo o mapa em 24 horas.
