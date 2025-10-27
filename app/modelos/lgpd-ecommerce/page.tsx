@@ -58,4 +58,40 @@ export default function LgpdEcommerce() {
           <ul>
             <li><strong>Identificação do controlador:</strong> nome, CNPJ, endereço, e-mail de contato.</li>
             <li><strong>Finalidade do tratamento:</strong> venda, entrega, marketing, cookies.</li>
-            <li><strong
+                    {/* DOWNLOAD DO WORD (lead magnet) */}
+        <section className="mt-10 p-6 border-2 border-green-500 rounded bg-green-50">
+          <h3 className="text-xl font-semibold mb-4 text-green-800">📄 Baixe o modelo em Word</h3>
+          <p className="mb-4">Preencha o formulário abaixo e receba o arquivo .docx por WhatsApp em 30 segundos.</p>
+
+          <form
+            action={`https://wa.me/71986482241?text=Olá, Preciso de uma análise do meu caso.%0A%0ANome: ${encodeURIComponent(
+              "NOME"
+            )}%0AWhatsApp: ${encodeURIComponent("WHATSAPP")}%0AModelo: LGPD-Ecommerce`}
+            method="get"
+            target="_blank"
+            className="max-w-md mx-auto space-y-4"
+          >
+            <div>
+              <label className="block mb-1 font-semibold text-sm">Nome</label>
+              <input name="nome" required className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black" />
+            </div>
+            <div>
+              <label className="block mb-1 font-semibold text-sm">WhatsApp</label>
+              <input name="whatsapp" type="tel" required placeholder="71986482241" className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black" />
+            </div>
+            <button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded">
+              Receba uma análise específica
+            </button>
+          </form>
+        </section>
+
+        {/* CTA FINAL (upsell) */}
+        <div className="mt-10 text-center">
+          <Link href="/consultoria" className="inline-block bg-slate-800 hover:bg-slate-900 text-white font-semibold py-3 px-6 rounded-lg">
+            Quer uma política sob medida? Contrate aqui
+          </Link>
+        </div>
+      </div>
+    </main>
+  );
+}
