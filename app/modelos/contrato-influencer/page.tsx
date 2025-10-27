@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Modelo de Contrato para Influencer Digital (Grátis) - Advogado Nômade",
-  description: "Baixe modelo de contrato influencer 100% gratuito. Cláusulas LGPD, direito de imagem, entrega de conteúdo e mais. Sem cadastro.",
+  description: "Baixe modelo de contrato influencer 100% gratuito. Cláusulas LGPD, direito de imagem, entrega, prazo, multa. Sem cadastro.",
 };
 
 export default function ModeloContratoInfluencer() {
@@ -75,7 +75,7 @@ export default function ModeloContratoInfluencer() {
 
           <h2>Exemplo real</h2>
           <p>
-            Marina, creator de lifestyle, usou esse modelo para fechar com uma marca de protetor solar. Em 48 horas o contrato estava assinado e o dinheiro caiu na conta. Ela disse: <em>“Nunca mais trabalho sem contrato. Me senti segura e profissional.”</em>
+            Marina, creator de lifestyle, usou esse modelo para fechar com uma marca de protetor solar. Em 48 horas o contrato estava assinado e o dinheiro caiu na conta no mesmo dia. Ela disse: <em>“Nunca mais trabalho sem contrato. Me senti segura e profissional.”</em>
           </p>
         </article>
 
@@ -85,7 +85,7 @@ export default function ModeloContratoInfluencer() {
           <p className="mb-4">Preencha o formulário abaixo e receba o contrato por WhatsApp em 30 segundos.</p>
 
           <form
-            action={`https://wa.me/5571986482241?text=Olá, Preciso de uma análise do meu caso.%0A%0ANome: ${encodeURIComponent(
+            action={`https://wa.me/71986482241?text=Olá, Preciso de uma análise do meu caso.%0A%0ANome: ${encodeURIComponent(
               "NOME"
             )}%0AWhatsApp: ${encodeURIComponent("WHATSAPP")}`}
             method="get"
@@ -98,7 +98,7 @@ export default function ModeloContratoInfluencer() {
             </div>
             <div>
               <label className="block mb-1 font-semibold text-sm">WhatsApp</label>
-              <input name="whatsapp" type="tel" required placeholder="88999999999" className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black" />
+              <input name="whatsapp" type="tel" required placeholder="71986482241" className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black" />
             </div>
             <button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded">
               Receba uma análise específica
