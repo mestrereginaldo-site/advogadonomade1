@@ -22,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ul className="space-y-1">
                 <li><Link href="/" className="text-white hover:text-green-400">Início</Link></li>
                 <li><Link href="/artigos" className="text-white hover:text-green-400">Artigos</Link></li>
-                <li><Link href="/blog" className="text-white hover:text-green-400">Modelos</Link></li>
+                <li><Link href="/Modelos" className="text-white hover:text-green-400">Modelos</Link></li>
                 <li><Link href="/consultoria" className="text-white hover:text-green-400">Consultoria Premium</Link></li>
                 <li><Link href="/contato" className="text-white hover:text-green-400">Contato</Link></li>
               </ul>
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ul className="space-y-1">
                 <li>Dr. Reginaldo Oliveira</li>
                 <li>OAB/SC 57.879</li>
-                <li><a href="https://wa.me/5571986482241" className="text-white hover:text-green-400">88 99999-9999</a></li>
+                <li><a href="https://wa.me/5571986482241" className="text-white hover:text-green-400">71 98648-2241</a></li>
               </ul>
             </div>
             <div>
