@@ -32,16 +32,8 @@ export default function OndeEstou() {
         {/* PIN VISUAL (SVG puro) */}
         <div className="flex justify-center mb-6">
           <svg viewBox="0 0 800 600" className="w-full max-w-2xl h-auto">
-            {/* Fundo do Brasil */}
             <rect width="800" height="600" fill="#f3f4f6" />
-            {/* Silhueta do Brasil (simplificada) */}
-            <path
-              d="M100 100 L700 100 L700 500 L100 500 Z"
-              fill="#e5e7eb"
-              stroke="#9ca3af"
-              strokeWidth="2"
-            />
-            {/* Pin na cidade atual */}
+            <path d="M100 100 L700 100 L700 500 L100 500 Z" fill="#e5e7eb" stroke="#9ca3af" strokeWidth="2" />
             <circle cx="400" cy="300" r="12" fill="#10b981" />
             <text x="400" y="330" textAnchor="middle" className="text-sm font-semibold fill-green-600">
               {cidadeAtual}
@@ -72,13 +64,13 @@ export default function OndeEstou() {
           <p className="text-sm mb-4">
             Envie um WhatsApp com sua cidade e eu atualizo o mapa em 24 horas.
           </p>
-          <a
+          <Link
             href="https://wa.me/71986482241?text=Olá, estou em [CIDADE] e quero saber mais sobre consultoria."
             target="_blank"
             className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded"
           >
             Enviar localização
-          </a>
+          </Link>
         </div>
       </div>
     </main>
