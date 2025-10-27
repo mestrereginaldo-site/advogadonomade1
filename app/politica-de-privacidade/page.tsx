@@ -28,9 +28,9 @@ export default function Politica() {
 
         <h2 className="text-xl font-semibold mt-6 mb-2">5. Contato</h2>
         <p>
-          Dr. Reginaldo Oliveira – OAB/AL 12345 – WhatsApp:{" "}
-          <a href="https://wa.me/5588999999999" className="text-green-400 underline">
-            88 99999-9999
+          Dr. Reginaldo Oliveira – OAB/SC: 57.879 – WhatsApp:{" "}
+          <a href="https://wa.me/5571986482241" className="text-green-400 underline">
+            71 98648-2241
           </a>
         </p>
       </div>
