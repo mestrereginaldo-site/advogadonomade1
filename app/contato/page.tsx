@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 
 export const metadata = {
@@ -48,7 +49,6 @@ export default function Contato() {
           <p>
             Preencha o formulário abaixo e receba resposta em até 5 minutos via WhatsApp. Sem burocracia, sem fila.
           </p>
-          <h2>Por que falar comigo?</h2>
           <ul>
             <li>Resposta em até 5 minutos via WhatsApp</li>
             <li>Sem fila, sem burocracia</li>
