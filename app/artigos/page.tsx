@@ -1,36 +1,35 @@
-// app/modelos/page.tsx
-export default function Modelos() {
+// app/artigos/page.tsx
+import Link from "next/link";
+
+const artigos = [
+  {
+    slug: "o-que-e-ser-nomade-digital",
+    titulo: "O que é ser nômade digital e como o Advogado Nômade se encaixa nesse contexto",
+    data: "15/09/2025",
+    tempo: "8 min",
+    img: "/images/modelo-influencer-cover.jpg",
+  },
+];
+
+export default function ArtigosIndex() {
   return (
     <main className="min-h-screen bg-white text-black">
       <div className="max-w-5xl mx-auto px-4 py-10">
-        <h1 className="text-3xl font-bold mb-6">Modelos</h1>
-        <p className="mb-8">Modelos de contratos, peças e documentos jurídicos para creators e empresas.</p>
+        <h1 className="text-3xl font-bold mb-6">Artigos</h1>
+        <p className="mb-8">Direito descomplicado para creators e empresas.</p>
 
-        {/* Lista de modelos (vazia por enquanto) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="border border-gray-200 rounded p-6 text-center">
-            <h3 className="text-lg font-semibold mb-2">Contrato Influencer</h3>
-            <p className="text-sm text-gray-600">Modelo de contrato para parcerias com influenciadores.</p>
-            <Link href="/modelos/contrato-influencer" className="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
-              Baixar
+          {artigos.map((art) => (
+            <Link key={art.slug} href={`/artigos/${art.slug}`} className="group block">
+              <div className="border border-gray-200 rounded overflow-hidden hover:shadow-lg transition">
+                <img src={art.img} alt={art.titulo} className="w-full h-48 object-cover" />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold group-hover:text-green-600">{art.titulo}</h3>
+                  <div className="text-sm text-gray-500 mt-2">{art.data} • {art.tempo}</div>
+                </div>
+              </div>
             </Link>
-          </div>
-
-          <div className="border border-gray-200 rounded p-6 text-center">
-            <h3 className="text-lg font-semibold mb-2">LGPD E-commerce</h3>
-            <p className="text-sm text-gray-600">Política de privacidade para lojas virtuais.</p>
-            <Link href="/modelos/lgpd-ecommerce" className="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
-              Baixar
-            </Link>
-          </div>
-
-          <div className="border border-gray-200 rounded p-6 text-center">
-            <h3 className="text-lg font-semibold mb-2">Contrato Startup Delaware</h3>
-            <p className="text-sm text-gray-600">Modelo para abertura de startup nos EUA.</p>
-            <Link href="/modelos/contrato-startup-delaware" className="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded">
-              Baixar
-            </Link>
-          </div>
+          ))}
         </div>
       </div>
     </main>
