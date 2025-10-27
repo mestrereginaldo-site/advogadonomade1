@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Política de Privacidade para E-commerce (Grátis) - Advogado Nômade",
-  description: "Baixe política de privacidade LGPD para e-commerce 100% gratuita. Cláusulas obrigatórias, cookies, direitos do titular. Sem cadastro.",
+  description: "Baixe política de privacidade LGPD para e-commerce 100% gratuita. Cláusulas obrigatórias LGPD, cookies, direitos do titular. Sem cadastro.",
 };
 
 export default function LgpdEcommerce() {
@@ -58,10 +58,33 @@ export default function LgpdEcommerce() {
           <ul>
             <li><strong>Identificação do controlador:</strong> nome, CNPJ, endereço, e-mail de contato.</li>
             <li><strong>Finalidade do tratamento:</strong> venda, entrega, marketing, cookies.</li>
-                    {/* DOWNLOAD DO WORD (lead magnet) */}
+            <li><strong>Base legal:</strong> consentimento (art. 7º, I) e execução de contrato (art. 7º, V).</li>
+            <li><strong>Direitos do titular:</strong> acesso, correção, exclusão, portabilidade, revogação do consentimento.</li>
+            <li><strong>Cookies:</strong> aviso de uso e opção de desativação.</li>
+            <li><strong>Canal de contato:</strong> e-mail e telefone para exercer direitos.</li>
+            <li><strong>Retenção de dados:</strong> prazo e critérios para exclusão.</li>
+            <li><strong>Alterações na política:</strong> como o cliente será informado.</li>
+          </ul>
+
+          <h2>Como usar o modelo?</h2>
+          <ol>
+            <li>Baixe o Word no botão verde abaixo.</li>
+            <li>Altere os campos em amarelo (nome da loja, CNPJ, e-mail, telefone).</li>
+            <li>Publique na página "Política de Privacidade" do seu site.</li>
+            <li>Adicione link no rodapé e no checkout.</li>
+            <li>Pronto: você está em conformidade com a LGPD.</li>
+          </ol>
+
+          <h2>Exemplo real</h2>
+          <p>
+            Loja de roupas de Florianópolis usou esse modelo e, em 48 horas, estava em conformidade. A cliente disse: <em>“Me senti segura para vender para todo Brasil.”</em>
+          </p>
+        </article>
+
+        {/* DOWNLOAD + FORMULÁRIO (lead magnet) */}
         <section className="mt-10 p-6 border-2 border-green-500 rounded bg-green-50">
           <h3 className="text-xl font-semibold mb-4 text-green-800">📄 Baixe o modelo em Word</h3>
-          <p className="mb-4">Preencha o formulário abaixo e receba o arquivo .docx por WhatsApp em 30 segundos.</p>
+          <p className="mb-4">Preencha o formulário abaixo e receba a política por WhatsApp em 30 segundos.</p>
 
           <form
             action={`https://wa.me/71986482241?text=Olá, Preciso de uma análise do meu caso.%0A%0ANome: ${encodeURIComponent(
