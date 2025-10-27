@@ -85,7 +85,7 @@ export default function ModeloContratoInfluencer() {
           <p className="mb-4">Preencha o formulário abaixo e receba o contrato por WhatsApp em 30 segundos.</p>
 
           <form
-            action={`https://wa.me/5588999999999?text=Olá, Preciso de uma análise do meu caso.%0A%0ANome: ${encodeURIComponent(
+            action={`https://wa.me/5571986482241?text=Olá, Preciso de uma análise do meu caso.%0A%0ANome: ${encodeURIComponent(
               "NOME"
             )}%0AWhatsApp: ${encodeURIComponent("WHATSAPP")}`}
             method="get"
