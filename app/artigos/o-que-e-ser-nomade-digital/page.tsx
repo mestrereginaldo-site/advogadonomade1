@@ -1,6 +1,6 @@
 // app/artigos/o-que-e-ser-nomade-digital/page.tsx
 import { Metadata } from "next";
-
+import Link from "next/link";
 export const metadata = {
   title: "O que é ser nômade digital e como o Advogado Nômade se encaixa nesse contexto",
   description: "Descubra o que é nômade digital, vantagens, desafios e como um advogado nômade pode te ajudar a viver e trabalhar de qualquer lugar do Brasil.",
