@@ -79,8 +79,8 @@ export default function Artigo() {
 
           {/* CTA FINAL */}
           <div className="mt-8 text-center">
-            <Link
-              href="https://wa.me/5588999999999?text=Quero%20ser%20nômade%20-%20preciso%20de%20uma%20análise"
+              import Link from "next/link";<Link
+              href="https://wa.me/5571986482241?text=Quero%20ser%20nômade%20-%20preciso%20de%20uma%20análise"
               className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg"
             >
               Falar com o Advogado Nômade
