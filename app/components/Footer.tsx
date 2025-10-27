@@ -10,7 +10,7 @@ export default function Footer() {
           <h3 className="font-bold text-green-400 mb-2">Institucional</h3>
           <ul className="space-y-1">
             <li><Link href="/" className="text-white hover:text-green-400">Início</Link></li>
-            <li><Link href="/blog" className="text-white hover:text-green-400">Modelos</Link></li>
+            <li><Link href="/Modelos" className="text-white hover:text-green-400">Modelos</Link></li>
             <li><Link href="/contratar" className="text-white hover:text-green-400">Contratar</Link></li>
           </ul>
         </div>
@@ -32,11 +32,11 @@ export default function Footer() {
             <li>Dr. Reginaldo Oliveira</li>
             <li>OAB/SC 57.879</li>
             <li>
-              <a href="https://wa.me/5588999999999" className="text-white hover:text-green-400">
-                WhatsApp: 88 99999-9999
+              <a href="https://wa.me/5571986482241" className="text-white hover:text-green-400">
+                WhatsApp: 71 98648-2241
               </a>
             </li>
-            <li>Maceió/AL – Brasil</li>
+            <li>Salvador/BA – Brasil</li>
           </ul>
         </div>
 
