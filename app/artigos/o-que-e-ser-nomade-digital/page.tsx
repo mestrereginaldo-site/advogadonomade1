@@ -1,6 +1,6 @@
 // app/artigos/o-que-e-ser-nomade-digital/page.tsx
-import { Metadata } from "next";
 import Link from "next/link";
+
 export const metadata = {
   title: "O que é ser nômade digital e como o Advogado Nômade se encaixa nesse contexto",
   description: "Descubra o que é nômade digital, vantagens, desafios e como um advogado nômade pode te ajudar a viver e trabalhar de qualquer lugar do Brasil.",
@@ -15,7 +15,7 @@ export default function Artigo() {
         {/* CABEÇALHO DO ARTIGO */}
         <header className="mb-8">
           <img
-            src="/images/nomad-digital-banner.jpg"
+            src="/images/modelo-influencer-cover.jpg"
             alt="Nômade digital trabalhando na praia"
             className="w-full h-64 object-cover rounded mb-4"
           />
@@ -28,7 +28,7 @@ export default function Artigo() {
         </header>
 
         {/* CORPO DO ARTIGO (1200+ palavras) */}
-        <article className="prose prose-slate max-w-none">
+        <article className="prose prose-slate max-w-none mb-8">
           <p>
             Imagine acordar em uma praia de Jericoacoara, tomar seu café da manhã com vista para o mar e, depois, resolver um contrato internacional pelo seu celular. Essa é a rotina de um <strong>nômade digital</strong> – e o <strong>Advogado Nômade</strong> está exatamente nesse cenário, mas com um diferencial: ele carrega a toga na mochila.
           </p>
@@ -55,7 +55,7 @@ export default function Artigo() {
 
           <h2>Como o Advogado Nômade entra nesse contexto?</h2>
           <p>
-            Eu, Dr. Reginaldo Oliveira, OAB/AL 12345, decidi abraçar esse estilo em 2024. Hoje atendo de Maceió a Manaus, de Copacabana ao Ceará, sempre com a mesma promessa: <strong>resposta em 5 minutos</strong> e documento pronto em 24 horas.
+            Eu, Dr. Reginaldo Oliveira, OAB/SC: 57.879, decidi abraçar esse estilo em 2024. Hoje atendo de Maceió a Manaus, de Copacabana ao Ceará, sempre com a mesma promessa: <strong>resposta em 5 minutos</strong> e documento pronto em 24 horas.
           </p>
 
           <h2>Serviços que você pode contratar de qualquer lugar</h2>
@@ -76,17 +76,17 @@ export default function Artigo() {
           <p>
             É simples: clique no botão verde abaixo, fale comigo no WhatsApp e diga <strong>“quero ser nômade”</strong>. Vou te enviar o <strong>Guia Passo a Passo</strong> e, se quiser, já agendamos sua primeira consultoria.
           </p>
-
-          {/* CTA FINAL */}
-          <div className="mt-8 text-center">
-              import Link from "next/link";<Link
-              href="https://wa.me/5571986482241?text=Quero%20ser%20nômade%20-%20preciso%20de%20uma%20análise"
-              className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg"
-            >
-              Falar com o Advogado Nômade
-            </Link>
-          </div>
         </article>
+
+        {/* CTA FINAL */}
+        <div className="text-center">
+          <Link
+            href="https://wa.me/5571986482241?text=Quero%20ser%20nômade%20-%20preciso%20de%20uma%20análise"
+            className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg"
+          >
+            Falar com o Advogado Nômade
+          </Link>
+        </div>
       </div>
     </main>
   );
