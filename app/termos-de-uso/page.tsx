@@ -55,8 +55,8 @@ export default function Termos() {
         <h2 className="text-xl font-semibold mt-6 mb-2">9. Contato</h2>
         <p>
           Dúvidas? Entre em contato via WhatsApp:{" "}
-          <a href="https://wa.me/5588999999999" className="text-green-400 underline">
-            88 99999-9999
+          <a href="https://wa.me/5571986482241" className="text-green-400 underline">
+            71 98648-2241
           </a>
         </p>
       </div>
