@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ul className="space-y-1">
                 <li>Dr. Reginaldo Oliveira</li>
                 <li>OAB/SC 57.879</li>
-                <li><a href="https://wa.me/5588999999999" className="text-white hover:text-green-400">88 99999-9999</a></li>
+                <li><a href="https://wa.me/5571986482241" className="text-white hover:text-green-400">88 99999-9999</a></li>
               </ul>
             </div>
             <div>
@@ -50,7 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </footer>
         <div className="fixed bottom-4 right-4 z-50">
-          <a href="https://wa.me/5588999999999?text=Preciso%20de%20um%20advogado%20agora" className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-full shadow-lg">
+          <a href="https://wa.me/5571986482241?text=Preciso%20de%20um%20advogado%20agora" className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-full shadow-lg">
             WhatsApp
           </a>
         </div>
