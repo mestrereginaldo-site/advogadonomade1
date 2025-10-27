@@ -21,7 +21,6 @@ export default function Header() {
           <Link href="/consultoria" className="hover:text-green-400">Consultoria Premium</Link>
           <Link href="/contato" className="hover:text-green-400">Contato</Link>
           <Link href="/onde-estou" className="hover:text-green-400">Onde Estou</Link>
-          <Link href="/advogado/sao-paulo" className="hover:text-green-400">Advogado na sua cidade</Link>
         </nav>
 
         {/* MOBILE HAMBÚRGUER FUNCIONAL */}
@@ -35,7 +34,6 @@ export default function Header() {
               <Link href="/consultoria" onClick={() => setOpen(false)} className="block hover:text-green-400">Consultoria Premium</Link>
               <Link href="/contato" onClick={() => setOpen(false)} className="block hover:text-green-400">Contato</Link>
               <Link href="/onde-estou" onClick={() => setOpen(false)} className="block hover:text-green-400">Onde Estou</Link>
-              <Link href="/advogado/sao-paulo" onClick={() => setOpen(false)} className="block hover:text-green-400">Advogado na sua cidade</Link>
             </div>
           )}
         </div>
