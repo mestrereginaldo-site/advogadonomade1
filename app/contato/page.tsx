@@ -1,10 +1,9 @@
-// app/contato/page.tsx
-import { Metadata } from "next";
+"use client";
 import Link from "next/link";
 
 export const metadata = {
   title: "Contato - Advogado Nômade",
-  description: "Fale com Dr. Reginaldo Oliveira – consultoria jurídica online em qualquer cidade do Brasil. Formulário de contato com campo de texto livre.",
+  description: "Fale com Dr. Reginaldo Oliveira – consultoria online em qualquer cidade do Brasil.",
   keywords: "contato advogado, formulário de contato, consultoria online, advogado [cidade], OAB SC 57.879",
   openGraph: {
     title: "Contato - Advogado Nômade",
@@ -38,9 +37,7 @@ export default function Contato() {
             alt="Contato Advogado Nômade"
             className="w-full h-64 object-cover rounded mb-4"
           />
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">
-            Contato
-          </h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">Contato</h1>
           <div className="text-sm text-gray-500">
             Por Dr. Reginaldo Oliveira • OAB/SC 57.879 • Atendimento online em qualquer cidade do Brasil
           </div>
@@ -51,7 +48,6 @@ export default function Contato() {
           <p>
             Preencha o formulário abaixo e receba resposta em até 5 minutos via WhatsApp. Sem burocracia, sem fila.
           </p>
-
           <h2>Por que falar comigo?</h2>
           <ul>
             <li>Resposta em até 5 minutos via WhatsApp</li>
