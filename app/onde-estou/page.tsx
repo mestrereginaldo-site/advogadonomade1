@@ -1,26 +1,10 @@
 // app/onde-estou/page.tsx
-import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Onde Estou Hoje - Advogado Nômade",
-  description: "Veja onde o Dr. Reginaldo Oliveira está atendendo hoje. Consultoria jurídica online em qualquer cidade do Brasil.",
-  keywords: "onde está o advogado, advogado nômade, consultoria online, advogado [cidade], localização advogado",
-  openGraph: {
-    title: "Onde Estou Hoje - Advogado Nômade",
-    description: "Veja onde o Dr. Reginaldo Oliveira está atendendo hoje.",
-    url: "https://advogadonomade.com.br/onde-estou",
-    siteName: "Advogado Nômade",
-    images: ["https://advogadonomade.com.br/images/mapa-cover.jpg"],
-    locale: "pt_BR",
-    type: "website",
-  },
-};
+const cidadeAtual = "Florianópolis/SC";
+const dataAtual = "15/10/2025";
 
 export default function OndeEstou() {
-  const cidadeAtual = "Florianópolis/SC";
-  const dataAtual = "15/10/2025";
-
   return (
     <main className="min-h-screen bg-white text-black">
       <div className="max-w-4xl mx-auto px-4 py-10 text-center">
@@ -29,7 +13,7 @@ export default function OndeEstou() {
           Atendimento online em <strong>qualquer cidade do Brasil</strong>. Hoje estou em:
         </p>
 
-        {/* PIN VISUAL (SVG puro) */}
+        {/* PIN COLORIDO (sem imagem) */}
         <div className="flex justify-center mb-6">
           <svg viewBox="0 0 800 600" className="w-full max-w-2xl h-auto">
             <rect width="800" height="600" fill="#f3f4f6" />
