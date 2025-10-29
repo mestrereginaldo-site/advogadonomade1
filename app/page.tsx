@@ -106,9 +106,6 @@ export default function Home() {
           <div className="text-sm text-gray-500 border-t pt-8">
             <p>Dr. Reginaldo Oliveira | OAB/SC 57.879 | Atendimento on-line em todo Brasil</p>
             <div className="flex gap-4 mt-2">
-              <Link className="hover:text-green-600" href="/privacidade">Política de Privacidade</Link>
-              <Link className="hover:text-green-600" href="/termos">Termos de Uso</Link>
-              <Link className="hover:text-green-600" href="/contato">Contato</Link>
             </div>
           </div>
         </div>
