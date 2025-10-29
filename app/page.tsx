@@ -128,28 +128,39 @@ export default function Home() {
           </div>
 
           {/* H2 - Newsletter (com form funcional) */}
+          {/* Bloco 3 – Newsletter (ENVIA PARA SEU E-MAIL SEM LOOP) */}
           <div>
-            <h2 className="text-3xl font-bold mb-4">📬 Dicas jurídicas de graça</h2>
-            <p className="mb-4 text-gray-600">1 e-mail por semana, 2 min de leitura, sempre útil.</p>
+          <h2 className="text-3xl font-bold mb-4">📬 Dicas jurídicas de graça</h2>
+          <p className="mb-4 text-gray-600">1 e-mail por semana, 2 min de leitura, sempre útil.</p>
 
-            <form action="https://api.staticforms.xyz/submit" method="POST" className="space-y-4 max-w-md">
-              <input type="hidden" name="accessKey" value="1f2a3b4c-5d6e-7f8g-9h0i-1j2k3l4m5n6o" />
-              <input type="hidden" name="subject" value="Novo lead – Newsletter Advogado Nômade" />
-              <input type="hidden" name="redirectTo" value="https://advogadonomade.com.br/obrigado" />
+          <form
+          action="https://api.staticforms.xyz/submit"
+          method="POST"
+         className="space-y-4 max-w-md"
+         >
+         {/* campo oculto – seu e-mail de destino */}
+         <input type="hidden" name="accessKey" value="1f2a3b4c-5d6e-7f8g-9h0i-1j2k3l4m5n6o" />
+         {/* assunto fixo que vai chegar para você */}
+         <input type="hidden" name="subject" value="Novo lead – Newsletter Advogado Nômade" />
+         {/* redireciona após envio (evita reenvio F5) */}
+         <input type="hidden" name="redirectTo" value="https://advogadonomade.com.br/obrigado" />
 
-              <input
-                type="email"
-                name="email"
-                placeholder="Seu melhor e-mail"
-                required
-                className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black"
-                aria-label="Seu melhor e-mail"
-              />
-              <button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded">
-                Cadastrar
-              </button>
-            </form>
-          </div>
+         <input
+        type="email"
+        name="email"
+        placeholder="Seu melhor e-mail"
+        required
+        className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black"
+        aria-label="Seu melhor e-mail"
+        />
+       <button
+      type="submit"
+      className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded"
+    >
+      Cadastrar
+    </button>
+  </form>
+</div>
 
           {/* H2 - Artigos em destaque */}
           <div>
@@ -165,9 +176,6 @@ export default function Home() {
           <div className="text-sm text-gray-500 border-t pt-8">
             <p>Dr. Reginaldo Oliveira | OAB/SC 57.879 | Atendimento on-line em todo Brasil</p>
             <div className="flex gap-4 mt-2">
-              <Link className="hover:text-green-600" href="/privacidade">Política de Privacidade</Link>
-              <Link className="hover:text-green-600" href="/termos">Termos de Uso</Link>
-              <Link className="hover:text-green-600" href="/contato">Contato</Link>
             </div>
           </div>
         </div>
