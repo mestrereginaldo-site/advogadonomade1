@@ -8,7 +8,7 @@ export default function Calculadoras() {
       <div className="max-w-5xl mx-auto px-4 py-10">
         <h1 className="text-3xl md:text-4xl font-bold mb-6">Calculadoras Jurídicas</h1>
         <p className="text-lg text-gray-600 mb-8">
-          Estime valores de rescisão, multas, indenizações e pensão. Use por sua conta e risco – sempre consulte um advogado.
+          Estime valores de rescisão, multas, indenizações e pensão. Sempre consulte um advogado.
         </p>
 
         {/* Botão WhatsApp */}
