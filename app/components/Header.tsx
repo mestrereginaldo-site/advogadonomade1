@@ -18,7 +18,7 @@ export default function Header() {
           <Link href="/" className="hover:text-green-400">Início</Link>
           <Link href="/artigos" className="hover:text-green-400">Artigos</Link>
           <Link href="/modelos" className="hover:text-green-400">Modelos</Link>
-          <Link href="/consultoria" className="hover:text-green-400">Consultoria Premium</Link>
+          <Link href="/consultoria" className="hover:text-green-400">Consultoria</Link>
           <Link href="/contato" className="hover:text-green-400">Contato</Link>
           <Link href="/onde-estou" className="hover:text-green-400">Onde Estou</Link>
         </nav>
