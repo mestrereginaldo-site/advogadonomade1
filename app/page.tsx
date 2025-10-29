@@ -71,26 +71,32 @@ export default function Home() {
           <div>
             <h2 className="text-3xl font-bold mb-4">📬 Dicas jurídicas de graça</h2>
             <p className="mb-4 text-gray-600">1 e-mail por semana, 2 min de leitura, sempre útil.</p>
-            <form
-              action="https://api.staticforms.xyz/submit"
-              method="POST"
-              className="space-y-4 max-w-md"
-            >
-              <input type="hidden" name="accessKey" value="SUA-ACCESS-KEY-STATICFORMS" />
-              <input
-                type="email"
-                name="email"
-                placeholder="Seu melhor e-mail"
-                required
-                className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black"
-              />
-              <button
-                type="submit"
-                className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded"
-              >
-                Cadastrar
-              </button>
-            </form>
+         <form
+  action="https://api.staticforms.xyz/submit"
+  method="POST"
+  className="space-y-4 max-w-md"
+>
+  {/* campo oculto – seu e-mail de destino */}
+  <input type="hidden" name="accessKey" value="1f2a3b4c-5d6e-7f8g-9h0i-1j2k3l4m5n6o" />
+  {/* assunto fixo que vai chegar para você */}
+  <input type="hidden" name="subject" value="Novo lead – Newsletter Advogado Nômade" />
+  {/* redirecionar após envio (opcional) */}
+  <input type="hidden" name="redirectTo" value="https://advogadonomade.com.br/obrigado" />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Seu melhor e-mail"
+    required
+    className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black"
+  />
+  <button
+    type="submit"
+    className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded"
+  >
+    Cadastrar
+  </button>
+</form>
           </div>
 
           {/* Bloco 4 – Artigos em destaque */}
