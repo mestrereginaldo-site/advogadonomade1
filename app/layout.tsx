@@ -22,8 +22,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ul className="space-y-1">
                 <li><Link href="/" className="text-white hover:text-green-400">Início</Link></li>
                 <li><Link href="/artigos" className="text-white hover:text-green-400">Artigos</Link></li>
-                <li><Link href="/Modelos" className="text-white hover:text-green-400">Modelos</Link></li>
-                <li><Link href="/consultoria" className="text-white hover:text-green-400">Consultoria Premium</Link></li>
+                <li><Link href="/modelos" className="text-white hover:text-green-400">Modelos</Link></li>
+                <li><Link href="/consultoria" className="text-white hover:text-green-400">Consultoria</Link></li>
                 <li><Link href="/contato" className="text-white hover:text-green-400">Contato</Link></li>
               </ul>
             </div>
