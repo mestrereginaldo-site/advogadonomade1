@@ -31,7 +31,7 @@ export default function Header() {
               <Link href="/" onClick={() => setOpen(false)} className="block hover:text-green-400">Início</Link>
               <Link href="/artigos" onClick={() => setOpen(false)} className="block hover:text-green-400">Artigos</Link>
               <Link href="/modelos" onClick={() => setOpen(false)} className="block hover:text-green-400">Modelos</Link>
-              <Link href="/consultoria" onClick={() => setOpen(false)} className="block hover:text-green-400">Consultoria Premium</Link>
+              <Link href="/consultoria" onClick={() => setOpen(false)} className="block hover:text-green-400">Consultoria</Link>
               <Link href="/contato" onClick={() => setOpen(false)} className="block hover:text-green-400">Contato</Link>
               <Link href="/onde-estou" onClick={() => setOpen(false)} className="block hover:text-green-400">Onde Estou</Link>
             </div>
