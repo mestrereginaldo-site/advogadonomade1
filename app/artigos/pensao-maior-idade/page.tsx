@@ -115,7 +115,8 @@ export default function Artigo() {
 
             1. Qualificação das partes (nome, CPF, endereço)
             2. Fundamentação: filho universitário, art. 1.694, § 2º, CC.
-            3. Pedido: fixar pensão de 25 % sobre renda de R$ 5.000,00 + 50 % dos gastos extras (comprovantes anexos).
+            3. Pedido: fixar pensão de 25 % sobre renda de R$ 5.000,00 + 50 % dos gastos 
+            extras (comprovantes anexos).
 
             Anexos: matrícula, frequência, extratos, laudo (se houver).
 
