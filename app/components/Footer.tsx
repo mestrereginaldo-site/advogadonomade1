@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Institucional</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gray-800">Institucional</h3>
             <ul className="space-y-2">
               <li><a href="/" className="text-gray-600 hover:text-blue-600 transition">Início</a></li>
               <li><a href="/artigos" className="text-gray-600 hover:text-blue-600 transition">Artigos</a></li>
@@ -13,7 +13,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Serviços</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gray-800">Serviços</h3>
             <ul className="space-y-2">
               <li><a href="/consultoria" className="text-gray-600 hover:text-blue-600 transition">Consultoria</a></li>
               <li><a href="/calculadoras" className="text-gray-600 hover:text-blue-600 transition">Calculadoras</a></li>
@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Legal</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gray-800">Legal</h3>
             <ul className="space-y-2">
               <li><a href="/politica-de-privacidade" className="text-gray-600 hover:text-blue-600 transition">Política de Privacidade</a></li>
               <li><a href="/termos-de-uso" className="text-gray-600 hover:text-blue-600 transition">Termos de Uso</a></li>
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contato</h3>
+            <h3 className="text-lg font-semibold mb-4 text-gray-800">Contato</h3>
             <div className="text-gray-600">
               <p className="font-semibold text-gray-800">Dr. Reginaldo Oliveira</p>
               <p>OAB/SC 57.879</p>
