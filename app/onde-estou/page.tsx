@@ -1,75 +1,55 @@
-import { Metadata } from "next";
-import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "Onde Estou - Advogado Nômade",
-  description: "Advogado nômade atendendo atualmente em Florianópolis/SC. Atendimento online em todo Brasil. OAB/SC 57.879.",
-  keywords: "advogado Florianópolis, advogado online, atendimento jurídico online, OAB/SC",
-};
-
-const cidadeAtual = "Florianópolis/SC";
-const dataAtual = "15/10/2025";
-
-export default function OndeEstou() {
+export default function Onde() {
   return (
-    <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 text-center">
-        <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Onde Estou Hoje</h1>
-          <p className="text-xl mb-4">
-            Atendimento online em <strong>qualquer cidade do Brasil</strong>. Hoje estou em:
+    <main className="min-h-screen bg-white text-black">
+      <div className="max-w-4xl mx-auto px-4 py-10">
+        <div className="text-center mb-8">
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+            Florianópolis/SC • 15/10/2025
+          </h1>
+          <p className="text-lg text-gray-600 mb-6">
+            Atendo online em qualquer cidade do Brasil. OAB/SC 57.879
           </p>
         </div>
-      </section>
 
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          {/* PIN COLORIDO (sem imagem) */}
-          <div className="flex justify-center mb-6">
-            <svg viewBox="0 0 800 600" className="w-full max-w-2xl h-auto">
-              <rect width="800" height="600" fill="#f3f4f6" />
-              <path d="M100 100 L700 100 L700 500 L100 500 Z" fill="#e5e7eb" stroke="#9ca3af" strokeWidth="2" />
-              <circle cx="400" cy="300" r="12" fill="#3b82f6" />
-              <text x="400" y="330" textAnchor="middle" className="text-sm font-semibold fill-blue-600">
-                {cidadeAtual}
-              </text>
-            </svg>
-          </div>
-
-          {/* INFO + CTA */}
-          <div className="mb-8">
-            <p className="text-lg">
-              📍 <strong>{cidadeAtual}</strong> • {dataAtual}
-            </p>
-            <p className="text-sm text-gray-600 mt-2">
-              Atendo online em qualquer cidade do Brasil. OAB/SC 57.879
-            </p>
-          </div>
-
-          {/* CTA FINAL (lead magnet) */}
+        <div className="bg-gray-50 rounded-xl p-8 shadow-sm border border-gray-200">
           <div className="text-center">
-            <Link href="/consultoria" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
-              Falar comigo em qualquer cidade
-            </Link>
-          </div>
-
-          {/* ATUALIZAÇÃO MANUAL (opcional) */}
-          <div className="mt-10 p-6 border border-gray-300 rounded bg-gray-50">
-            <h3 className="text-lg font-semibold mb-2">Atualização manual</h3>
-            <p className="text-sm mb-4">
-              Envie um WhatsApp com sua cidade e eu atualizo o mapa em 24 horas.
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">
+              Atendimento Online Nacional
+            </h2>
+            <p className="text-gray-600 mb-6">
+              Com ferramentas modernas de videoconferência e comunicação, 
+              presto consultoria jurídica para clientes em todo o território nacional, 
+              com a mesma qualidade e dedicação do atendimento presencial.
             </p>
-            <Link
-              href="https://wa.me/71986482241?text=Olá, estou em [CIDADE] e quero saber mais sobre consultoria."
+            
+            <a
+              href="https://wa.me/71986482241?text=Olá, gostaria de agendar uma consultoria"
               target="_blank"
-              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition-colors"
+              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-lg"
             >
-              Enviar localização
-            </Link>
+              Falar comigo em qualquer cidade
+            </a>
           </div>
         </div>
-      </section>
-    </>
+
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
+            <h3 className="text-lg font-semibold text-blue-800 mb-3">📍 Atendimento Presencial</h3>
+            <p className="text-blue-700">
+              Florianópolis/SC<br/>
+              Agendamento prévio necessário
+            </p>
+          </div>
+
+          <div className="bg-green-50 rounded-lg p-6 border border-green-200">
+            <h3 className="text-lg font-semibold text-green-800 mb-3">💻 Atendimento Online</h3>
+            <p className="text-green-700">
+              Todo o Brasil<br/>
+              Via WhatsApp, Zoom ou Google Meet
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
   );
 }
