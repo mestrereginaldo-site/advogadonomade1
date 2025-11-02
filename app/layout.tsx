@@ -4,8 +4,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Advogado Nômade | Consultoria Jurídica 100% On-line em Todo Brasil",
-  description: "Advogado on-line que atende em qualquer cidade do Brasil. Contratos, LGPD, rescisão, multas, pensão, direito digital. Resposta em 5 min via WhatsApp.",
+  title: "Advogado Nômade - Direito de Qualquer Lugar",
+  description: "Consultoria jurídica online 24h. Contratos, LGPD, startups, direito digital. WhatsApp 5 min.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -19,15 +19,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="bg-white shadow-sm sticky top-0 z-50">
           <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <div className="logo">
-              <h1 className="text-2xl font-bold text-blue-900">Advogado <span className="text-yellow-600">Nômade</span></h1>
+              <Link href="/" className="text-2xl font-bold text-blue-900">
+                Advogado <span className="text-yellow-600">Nômade</span>
+              </Link>
             </div>
             <nav className="hidden md:block">
               <ul className="flex space-x-8">
                 <li><Link href="/" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Início</Link></li>
-                <li><Link href="/calculadoras" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Calculadoras</Link></li>
-                <li><Link href="/sobre" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Sobre</Link></li>
                 <li><Link href="/artigos" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Artigos</Link></li>
+                <li><Link href="/modelos" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Modelos</Link></li>
+                <li><Link href="/calculadoras" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Calculadoras</Link></li>
+                <li><Link href="/consultoria" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Consultoria</Link></li>
                 <li><Link href="/contato" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Contato</Link></li>
+                <li><Link href="/onde-estou" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Onde Estou</Link></li>
               </ul>
             </nav>
             <div className="mobile-menu md:hidden text-2xl">
@@ -45,9 +49,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div>
                 <h3 className="text-xl font-bold mb-4 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-yellow-500">Institucional</h3>
                 <ul className="space-y-2">
-                  <li><Link href="/sobre" className="text-gray-300 hover:text-white transition-colors">Sobre</Link></li>
-                  <li><Link href="/blog" className="text-gray-300 hover:text-white transition-colors">Blog</Link></li>
-                  <li><Link href="/contato" className="text-gray-300 hover:text-white transition-colors">Contato</Link></li>
+                  <li><Link href="/" className="text-gray-300 hover:text-white transition-colors">Início</Link></li>
+                  <li><Link href="/artigos" className="text-gray-300 hover:text-white transition-colors">Artigos</Link></li>
+                  <li><Link href="/modelos" className="text-gray-300 hover:text-white transition-colors">Modelos</Link></li>
                 </ul>
               </div>
               <div>
@@ -55,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <ul className="space-y-2">
                   <li><Link href="/consultoria" className="text-gray-300 hover:text-white transition-colors">Consultoria</Link></li>
                   <li><Link href="/calculadoras" className="text-gray-300 hover:text-white transition-colors">Calculadoras</Link></li>
-                  <li><Link href="/modelos" className="text-gray-300 hover:text-white transition-colors">Modelos</Link></li>
+                  <li><Link href="/contato" className="text-gray-300 hover:text-white transition-colors">Contato</Link></li>
                 </ul>
               </div>
               <div>
@@ -78,17 +82,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   </div>
                   <div className="flex items-center">
                     <i className="fas fa-phone mr-3 text-yellow-500"></i>
-                    <div>(71) 98454-2241</div>
+                    <div>
+                      <a href="https://wa.me/5571986482241" className="text-gray-300 hover:text-white transition-colors">
+                        71 98648-2241
+                      </a>
+                    </div>
                   </div>
                   <div className="flex items-center">
-                    <i className="fas fa-envelope mr-3 text-yellow-500"></i>
-                    <div>contato@advogadonomade.com</div>
+                    <i className="fas fa-map-marker-alt mr-3 text-yellow-500"></i>
+                    <div>Salvador/BA – Brasil</div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="pt-8 border-t border-blue-700 text-center text-gray-400">
-              <p>&copy; 2023 Advogado Nômade. Todos os direitos reservados.</p>
+              <p>&copy; 2025 Advogado Nômade. Todos os direitos reservados.</p>
             </div>
           </div>
         </footer>
