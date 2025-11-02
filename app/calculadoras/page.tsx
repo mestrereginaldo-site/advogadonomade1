@@ -16,7 +16,7 @@ export default function Calculadoras() {
           <a
             href="https://wa.me/71986482241?text=Olá, quero uma consultoria jurídica"
             target="_blank"
-            className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
           >
             Falar com advogado
           </a>
@@ -38,8 +38,8 @@ export default function Calculadoras() {
 
 function Card({ title, desc, children }: { title: string; desc: string; children: React.ReactNode }) {
   return (
-    <div className="border border-gray-200 rounded p-6">
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
+    <div className="border border-gray-200 rounded-lg p-6 bg-gray-50 shadow-sm hover:shadow-md transition-shadow duration-300">
+      <h3 className="text-xl font-bold mb-2 text-gray-800">{title}</h3>
       <p className="text-sm text-gray-600 mb-4">{desc}</p>
       {children}
     </div>
@@ -75,59 +75,59 @@ function RescisaoCalculator() {
 
   return (
     <div className="space-y-4">
-      <label className="block text-sm font-semibold">Salário Bruto (R$)</label>
+      <label className="block text-sm font-semibold text-gray-700">Salário Bruto (R$)</label>
       <input
         type="text"
         placeholder="Ex: 2500,00"
         value={salario}
         onChange={(e) => setSalario(e.target.value)}
-        className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black"
+        className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent"
       />
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-semibold">Anos</label>
+          <label className="block text-sm font-semibold text-gray-700">Anos</label>
           <input
             type="number"
             placeholder="2"
             value={anos}
             onChange={(e) => setAnos(e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black"
+            className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           />
         </div>
         <div>
-          <label className="block text-sm font-semibold">Meses</label>
+          <label className="block text-sm font-semibold text-gray-700">Meses</label>
           <input
             type="number"
             placeholder="6"
             value={meses}
             onChange={(e) => setMeses(e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black"
+            className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           />
         </div>
       </div>
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-semibold">Aviso Prévio?</label>
-          <select value={aviso} onChange={(e) => setAviso(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black">
+          <label className="block text-sm font-semibold text-gray-700">Aviso Prévio?</label>
+          <select value={aviso} onChange={(e) => setAviso(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent">
             <option value="sim">Sim</option>
             <option value="nao">Não</option>
           </select>
         </div>
         <div>
-          <label className="block text-sm font-semibold">Férias Vencidas?</label>
-          <select value={ferias} onChange={(e) => setFerias(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black">
+          <label className="block text-sm font-semibold text-gray-700">Férias Vencidas?</label>
+          <select value={ferias} onChange={(e) => setFerias(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent">
             <option value="nao">Não</option>
             <option value="sim">Sim</option>
           </select>
         </div>
       </div>
-      <button onClick={calcular} className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded">
+      <button onClick={calcular} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded transition duration-300">
         Calcular Rescisão
       </button>
       {resultado !== null && (
-        <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded">
-          <p className="font-bold text-green-800">Resultado Estimado:</p>
-          <p className="text-xl font-bold">R$ {resultado.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</p>
+        <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded">
+          <p className="font-bold text-blue-800">Resultado Estimado:</p>
+          <p className="text-xl font-bold text-blue-900">R$ {resultado.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</p>
         </div>
       )}
     </div>
@@ -158,35 +158,35 @@ function MultaTransitoCalculator() {
 
   return (
     <div className="space-y-4">
-      <label className="block text-sm font-semibold">Tipo de Infração</label>
-      <select value={tipo} onChange={(e) => setTipo(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black">
+      <label className="block text-sm font-semibold text-gray-700">Tipo de Infração</label>
+      <select value={tipo} onChange={(e) => setTipo(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent">
         <option value="">Selecione</option>
         <option value="leve">Leve</option>
         <option value="media">Média</option>
         <option value="grave">Grave</option>
         <option value="gravissima">Gravíssima</option>
       </select>
-      <label className="block text-sm font-semibold">Pontos atuais na CNH</label>
+      <label className="block text-sm font-semibold text-gray-700">Pontos atuais na CNH</label>
       <input
         type="number"
         placeholder="0"
         value={pontos}
         onChange={(e) => setPontos(parseInt(e.target.value) || 0)}
-        className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black"
+        className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent"
       />
-      <label className="block text-sm font-semibold">Reincidente?</label>
-      <select value={reincidente} onChange={(e) => setReincidente(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black">
+      <label className="block text-sm font-semibold text-gray-700">Reincidente?</label>
+      <select value={reincidente} onChange={(e) => setReincidente(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent">
         <option value="nao">Não</option>
         <option value="sim">Sim</option>
       </select>
-      <button onClick={calcular} className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded">
+      <button onClick={calcular} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded transition duration-300">
         Calcular Multa
       </button>
       {resultado && (
-        <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded">
-          <p className="font-bold text-green-800">Multa: R$ {resultado.valor.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</p>
-          <p className="text-sm">Total de pontos na CNH: {resultado.pontos}</p>
-          {resultado.pontos >= 20 && <p className="text-red-600 text-sm">Atenção: risco de suspensão!</p>}
+        <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded">
+          <p className="font-bold text-blue-800">Multa: R$ {resultado.valor.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</p>
+          <p className="text-sm text-blue-700">Total de pontos na CNH: {resultado.pontos}</p>
+          {resultado.pontos >= 20 && <p className="text-red-600 text-sm font-semibold">Atenção: risco de suspensão!</p>}
         </div>
       )}
     </div>
@@ -221,8 +221,8 @@ function IndenizacaoCalculator() {
 
   return (
     <div className="space-y-4">
-      <label className="block text-sm font-semibold">Tipo de Situação</label>
-      <select value={tipo} onChange={(e) => setTipo(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black">
+      <label className="block text-sm font-semibold text-gray-700">Tipo de Situação</label>
+      <select value={tipo} onChange={(e) => setTipo(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent">
         <option value="">Selecione</option>
         <option value="negativacao-indevida">Negativação indevida</option>
         <option value="acidente-transito">Acidente de trânsito</option>
@@ -230,7 +230,7 @@ function IndenizacaoCalculator() {
         <option value="demissao-injusta">Demissão injusta</option>
         <option value="erro-medico">Erro médico</option>
       </select>
-      <label className="block text-sm font-semibold">Gravidade (1-10)</label>
+      <label className="block text-sm font-semibold text-gray-700">Gravidade (1-10)</label>
       <input
         type="range"
         min="1"
@@ -244,18 +244,18 @@ function IndenizacaoCalculator() {
         <span>Moderada</span>
         <span>Grave</span>
       </div>
-      <label className="block text-sm font-semibold">Duração do Dano</label>
-      <select value={duracao} onChange={(e) => setDuracao(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black">
+      <label className="block text-sm font-semibold text-gray-700">Duração do Dano</label>
+      <select value={duracao} onChange={(e) => setDuracao(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent">
         <option value="temporario">Temporário</option>
         <option value="permanente">Permanente</option>
       </select>
-      <button onClick={calcular} className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded">
+      <button onClick={calcular} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded transition duration-300">
         Estimar Indenização
       </button>
       {resultado && (
-        <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded">
-          <p className="font-bold text-green-800">Faixa estimada:</p>
-          <p className="text-xl font-bold">R$ {resultado.min.toLocaleString("pt-BR")} a R$ {resultado.max.toLocaleString("pt-BR")}</p>
+        <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded">
+          <p className="font-bold text-blue-800">Faixa estimada:</p>
+          <p className="text-xl font-bold text-blue-900">R$ {resultado.min.toLocaleString("pt-BR")} a R$ {resultado.max.toLocaleString("pt-BR")}</p>
         </div>
       )}
     </div>
@@ -285,45 +285,45 @@ function PensaoAlimenticiaCalculator() {
 
   return (
     <div className="space-y-4">
-      <label className="block text-sm font-semibold">Renda Mensal do Pagador (R$)</label>
+      <label className="block text-sm font-semibold text-gray-700">Renda Mensal do Pagador (R$)</label>
       <input
         type="text"
         placeholder="Ex: 3500,00"
         value={renda}
         onChange={(e) => setRenda(e.target.value)}
-        className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black"
+        className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent"
       />
-      <label className="block text-sm font-semibold">Número de Filhos</label>
-      <select value={filhos} onChange={(e) => setFilhos(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black">
+      <label className="block text-sm font-semibold text-gray-700">Número de Filhos</label>
+      <select value={filhos} onChange={(e) => setFilhos(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent">
         <option value="1">1 filho</option>
         <option value="2">2 filhos</option>
         <option value="3">3 filhos</option>
         <option value="4">4 filhos</option>
         <option value="5">5 ou mais</option>
       </select>
-      <label className="block text-sm font-semibold">Faixa Etária</label>
-      <select value={idade} onChange={(e) => setIdade(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black">
+      <label className="block text-sm font-semibold text-gray-700">Faixa Etária</label>
+      <select value={idade} onChange={(e) => setIdade(e.target.value)} className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent">
         <option value="bebe">Bebê (0-2 anos)</option>
         <option value="crianca">Criança (3-12 anos)</option>
         <option value="adolescente">Adolescente (13-17 anos)</option>
         <option value="universitario">Universitário (18+ anos)</option>
       </select>
-      <label className="block text-sm font-semibold">Gastos Extraordinários (R$)</label>
+      <label className="block text-sm font-semibold text-gray-700">Gastos Extraordinários (R$)</label>
       <input
         type="text"
         placeholder="Ex: escola, plano de saúde..."
         value={gastos}
         onChange={(e) => setGastos(e.target.value)}
-        className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black"
+        className="w-full px-3 py-2 border border-gray-300 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 focus:border-transparent"
       />
-      <button onClick={calcular} className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded">
+      <button onClick={calcular} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded transition duration-300">
         Calcular Pensão
       </button>
       {resultado && (
-        <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded">
-          <p className="font-bold text-green-800">Valor Estimado:</p>
-          <p className="text-xl font-bold">R$ {resultado.valor.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</p>
-          <p className="text-sm">Equivalente a {resultado.perc.toFixed(1)}% da renda informada.</p>
+        <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded">
+          <p className="font-bold text-blue-800">Valor Estimado:</p>
+          <p className="text-xl font-bold text-blue-900">R$ {resultado.valor.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}</p>
+          <p className="text-sm text-blue-700">Equivalente a {resultado.perc.toFixed(1)}% da renda informada.</p>
         </div>
       )}
     </div>
