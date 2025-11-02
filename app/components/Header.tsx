@@ -40,7 +40,7 @@ export default function Header() {
             ☰
           </button>
           {open && (
-            <div className="absolute top-full left-0 right-0 bg-white border-t border-gray-200">
+            <div className="absolute top-full left-0 right-0 bg-white">
               <div className="flex flex-col p-4 space-y-4">
                 <Link href="/" onClick={() => setOpen(false)} className="text-gray-800 hover:text-blue-600 font-medium">Início</Link>
                 <Link href="/artigos" onClick={() => setOpen(false)} className="text-gray-800 hover:text-blue-600 font-medium">Artigos</Link>
