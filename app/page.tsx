@@ -21,7 +21,7 @@ export default function Home() {
             href="https://wa.me/5571986482241?text=Preciso%20de%20um%20advogado%20agora"
             className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"
           >
-            <i className="fab fa-whatsapp"></i> Falar com advogado no WhatsApp
+            📱 Falar com advogado no WhatsApp
           </a>
         </div>
       </section>
@@ -38,25 +38,21 @@ export default function Home() {
               title="Rescisão Trabalhista" 
               desc="13º, férias, FGTS e aviso prévio." 
               href="/calculadoras" 
-              icon="fas fa-balance-scale"
             />
             <CardLink 
               title="Multas de Trânsito" 
               desc="Valor + pontos na CNH." 
               href="/calculadoras" 
-              icon="fas fa-car"
             />
             <CardLink 
               title="Indenização Moral" 
               desc="Faixa para danos morais." 
               href="/calculadoras" 
-              icon="fas fa-gavel"
             />
             <CardLink 
               title="Pensão Alimentícia" 
               desc="Por filho, com gastos extras." 
               href="/calculadoras" 
-              icon="fas fa-hand-holding-usd"
             />
           </div>
         </div>
@@ -138,20 +134,15 @@ export default function Home() {
   );
 }
 
-// Componente para os cards de calculadoras
-function CardLink({ title, desc, href, icon }: { title: string; desc: string; href: string; icon: string }) {
+function CardLink({ title, desc, href }: { title: string; desc: string; href: string }) {
   return (
     <Link href={href} className="block bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-      <div className="text-4xl text-blue-600 mb-4">
-        <i className={icon}></i>
-      </div>
       <h3 className="text-xl font-bold text-blue-900 mb-2">{title}</h3>
       <p className="text-gray-600">{desc}</p>
     </Link>
   );
 }
 
-// Componente para os itens de estatística
 function StatItem({ number, text }: { number: string; text: string }) {
   return (
     <div>
@@ -161,7 +152,6 @@ function StatItem({ number, text }: { number: string; text: string }) {
   );
 }
 
-// Componente para os cards de artigos
 function ArticleCard({ title, description, link }: { title: string; description: string; link: string }) {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
