@@ -1,50 +1,53 @@
-// app/components/Footer.tsx
-import Link from "next/link";
-
 export default function Footer() {
   return (
-    <footer className="w-full bg-slate-900 border-t border-slate-800 text-white">
-      <div className="max-w-5xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-6 text-sm">
-        {/* Institucional */}
-        <div>
-          <h3 className="font-bold text-green-400 mb-2">Institucional</h3>
-          <ul className="space-y-1">
-            <li><Link href="/" className="text-white hover:text-green-400">Início</Link></li>
-            <li><Link href="/Modelos" className="text-white hover:text-green-400">Modelos</Link></li>
-            <li><Link href="/contratar" className="text-white hover:text-green-400">Contratar</Link></li>
-          </ul>
+    <footer className="bg-white text-gray-800 py-8 border-t border-gray-200">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Institucional</h3>
+            <ul className="space-y-2">
+              <li><a href="/" className="text-gray-600 hover:text-blue-600 transition">Início</a></li>
+              <li><a href="/artigos" className="text-gray-600 hover:text-blue-600 transition">Artigos</a></li>
+              <li><a href="/modelos" className="text-gray-600 hover:text-blue-600 transition">Modelos</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Serviços</h3>
+            <ul className="space-y-2">
+              <li><a href="/consultoria" className="text-gray-600 hover:text-blue-600 transition">Consultoria</a></li>
+              <li><a href="/calculadoras" className="text-gray-600 hover:text-blue-600 transition">Calculadoras</a></li>
+              <li><a href="/contato" className="text-gray-600 hover:text-blue-600 transition">Contato</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Legal</h3>
+            <ul className="space-y-2">
+              <li><a href="/politica-de-privacidade" className="text-gray-600 hover:text-blue-600 transition">Política de Privacidade</a></li>
+              <li><a href="/termos-de-uso" className="text-gray-600 hover:text-blue-600 transition">Termos de Uso</a></li>
+              <li><a href="/cookies" className="text-gray-600 hover:text-blue-600 transition">Cookies</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Contato</h3>
+            <div className="text-gray-600">
+              <p className="font-semibold text-gray-800">Dr. Reginaldo Oliveira</p>
+              <p>OAB/SC 57.879</p>
+              <p>
+                <a href="tel:+5571986482241" className="hover:text-blue-600 transition">
+                  71 98648-2241
+                </a>
+              </p>
+              <p>Salvador/BA – Brasil</p>
+            </div>
+          </div>
         </div>
 
-        {/* Políticas */}
-        <div>
-          <h3 className="font-bold text-green-400 mb-2">Políticas</h3>
-          <ul className="space-y-1">
-            <li><Link href="/politica-de-privacidade" className="text-white hover:text-green-400">Política de Privacidade</Link></li>
-            <li><Link href="/termos-de-uso" className="text-white hover:text-green-400">Termos de Uso</Link></li>
-            <li><Link href="/cookies" className="text-white hover:text-green-400">Cookies</Link></li>
-          </ul>
-        </div>
-
-        {/* Contato */}
-        <div>
-          <h3 className="font-bold text-green-400 mb-2">Contato</h3>
-          <ul className="space-y-1">
-            <li>Dr. Reginaldo Oliveira</li>
-            <li>OAB/SC 57.879</li>
-            <li>
-              <a href="https://wa.me/5571986482241" className="text-white hover:text-green-400">
-                WhatsApp: 71 98648-2241
-              </a>
-            </li>
-            <li>Salvador/BA – Brasil</li>
-          </ul>
-        </div>
-
-        {/* Direitos */}
-        <div>
-          <h3 className="font-bold text-green-400 mb-2">© 2025 Advogado Nômade</h3>
-          <p className="text-xs text-gray-400">
-            Todos os direitos reservados.
+        <div className="border-t border-gray-300 pt-6 text-center">
+          <p className="text-gray-500">
+            © 2025 Advogado Nômade. Todos os direitos reservados.
           </p>
         </div>
       </div>
