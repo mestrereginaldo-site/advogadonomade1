@@ -15,8 +15,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-screen flex flex-col bg-white text-black">
         <main>{children}</main>
-        
-        {/* Footer removido do layout - agora está no page.tsx */}
       </body>
     </html>
   );
