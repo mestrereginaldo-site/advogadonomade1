@@ -6,10 +6,9 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-white fixed top-0 left-0 right-0 z-50 border-none">
+    <header className="bg-white fixed top-0 left-0 right-0 z-50" style={{ border: 'none', boxShadow: 'none' }}>
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center bg-white">
         <Link href="/" className="flex items-center space-x-3">
-          {/* Logo */}
           <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-xl">AN</span>
           </div>
@@ -40,7 +39,7 @@ export default function Header() {
             ☰
           </button>
           {open && (
-            <div className="absolute top-full left-0 right-0 bg-white">
+            <div className="absolute top-full left-0 right-0 bg-white" style={{ border: 'none' }}>
               <div className="flex flex-col p-4 space-y-4">
                 <Link href="/" onClick={() => setOpen(false)} className="text-gray-800 hover:text-blue-600 font-medium">Início</Link>
                 <Link href="/artigos" onClick={() => setOpen(false)} className="text-gray-800 hover:text-blue-600 font-medium">Artigos</Link>
