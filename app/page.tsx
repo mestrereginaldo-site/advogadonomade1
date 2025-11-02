@@ -1,3 +1,4 @@
+// app/page.tsx
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -74,15 +75,17 @@ export default function Home() {
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="logo">
-            <h1 className="text-2xl font-bold text-blue-900">Advogado <span className="text-yellow-600">Nômade</span></h1>
+            <Link href="/">
+              <h1 className="text-2xl font-bold text-blue-900">Advogado <span className="text-yellow-600">Nômade</span></h1>
+            </Link>
           </div>
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
-              <li><a href="#inicio" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Início</a></li>
-              <li><a href="#calculadoras" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Calculadoras</a></li>
-              <li><a href="#sobre" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Sobre</a></li>
-              <li><a href="#artigos" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Artigos</a></li>
-              <li><a href="#contato" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Contato</a></li>
+              <li><Link href="/" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Início</Link></li>
+              <li><Link href="/calculadoras" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Calculadoras</Link></li>
+              <li><Link href="/artigos" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Artigos</Link></li>
+              <li><Link href="/consultoria" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Consultoria</Link></li>
+              <li><Link href="/contato" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Contato</Link></li>
             </ul>
           </nav>
           <div className="mobile-menu md:hidden text-2xl">
@@ -92,7 +95,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section id="inicio" className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 text-center">
+      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Direito de qualquer lugar, para qualquer pessoa, a qualquer hora.</h2>
           <p className="text-xl mb-8">Atendimento jurídico digital com agilidade e qualidade. Resolva suas questões jurídicas de forma prática e eficiente.</p>
@@ -108,58 +111,95 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="calculadoras" className="py-16 bg-white">
+      {/* Features Section - CALCULADORAS COM LINKS */}
+      <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-blue-900 mb-4">🧮 Calculadoras Jurídicas Grátis</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">Estime valores em segundos. Resultados são referências – confirme com nosso advogado.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <FeatureCard 
-              icon="fas fa-balance-scale" 
-              title="Rescisão Trabalhista" 
-              description="Calcule 13º, férias, FGTS e aviso prévio de forma rápida e precisa." 
-            />
-            <FeatureCard 
-              icon="fas fa-car" 
-              title="Multas de Trânsito" 
-              description="Verifique valor e pontos na CNH. Saiba como recorrer." 
-            />
-            <FeatureCard 
-              icon="fas fa-gavel" 
-              title="Indenização Moral" 
-              description="Estime valores para danos morais em diferentes situações." 
-            />
-            <FeatureCard 
-              icon="fas fa-hand-holding-usd" 
-              title="Pensão Alimentícia" 
-              description="Calcule valores considerando gastos extras e necessidades." 
-            />
+            <Link href="/calculadoras">
+              <div className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-gray-100 cursor-pointer">
+                <div className="text-4xl text-blue-600 mb-4">
+                  <i className="fas fa-balance-scale"></i>
+                </div>
+                <h3 className="text-xl font-bold text-blue-900 mb-2">Rescisão Trabalhista</h3>
+                <p className="text-gray-600">Calcule 13º, férias, FGTS e aviso prévio de forma rápida e precisa.</p>
+              </div>
+            </Link>
+            
+            <Link href="/calculadoras">
+              <div className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-gray-100 cursor-pointer">
+                <div className="text-4xl text-blue-600 mb-4">
+                  <i className="fas fa-car"></i>
+                </div>
+                <h3 className="text-xl font-bold text-blue-900 mb-2">Multas de Trânsito</h3>
+                <p className="text-gray-600">Verifique valor e pontos na CNH. Saiba como recorrer.</p>
+              </div>
+            </Link>
+            
+            <Link href="/calculadoras">
+              <div className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-gray-100 cursor-pointer">
+                <div className="text-4xl text-blue-600 mb-4">
+                  <i className="fas fa-gavel"></i>
+                </div>
+                <h3 className="text-xl font-bold text-blue-900 mb-2">Indenização Moral</h3>
+                <p className="text-gray-600">Estime valores para danos morais em diferentes situações.</p>
+              </div>
+            </Link>
+            
+            <Link href="/calculadoras">
+              <div className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-gray-100 cursor-pointer">
+                <div className="text-4xl text-blue-600 mb-4">
+                  <i className="fas fa-hand-holding-usd"></i>
+                </div>
+                <h3 className="text-xl font-bold text-blue-900 mb-2">Pensão Alimentícia</h3>
+                <p className="text-gray-600">Calcule valores considerando gastos extras e necessidades.</p>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section id="sobre" className="py-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+      <section className="py-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">💬 Fale com quem entende</h2>
             <p className="text-xl opacity-90">Atendimento jurídico de excelência com resultados comprovados</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <StatItem number="42 mil+" text="Atendimentos Online" />
-            <StatItem number="97%" text="Clientes Satisfeitos" />
-            <StatItem number="47" text="Cidades Atendidas" />
+            <div>
+              <h3 className="text-4xl font-bold mb-2">42 mil+</h3>
+              <p className="text-xl opacity-90">Atendimentos Online</p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-bold mb-2">97%</h3>
+              <p className="text-xl opacity-90">Clientes Satisfeitos</p>
+            </div>
+            <div>
+              <h3 className="text-4xl font-bold mb-2">47</h3>
+              <p className="text-xl opacity-90">Cidades Atendidas</p>
+            </div>
+          </div>
+          <div className="text-center mt-12">
+            <a
+              href="https://wa.me/5571986482241?text=Quero%20minha%20consultoria%20jur%C3%ADdica"
+              className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"
+            >
+              <i className="fab fa-whatsapp"></i> Quero minha consultoria no WhatsApp
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Newsletter */}
+      {/* Newsletter - FORMULÁRIO FUNCIONAL */}
       <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-blue-900 mb-4">📬 Dicas jurídicas de graça</h2>
           <p className="text-gray-600 mb-8">1 e-mail por semana, 2 min de leitura, sempre útil.</p>
+          
           <form
             action="https://api.staticforms.xyz/submit"
             method="POST"
@@ -186,43 +226,67 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Articles */}
-      <section id="artigos" className="py-16 bg-gray-50">
+      {/* Articles - COM LINKS FUNCIONAIS */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-blue-900 mb-4">📚 Artigos mais lidos</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">Informações jurídicas atualizadas para esclarecer suas dúvidas</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ArticleCard 
-              title="5 direitos que todo trabalhador esquece ao pedir demissão" 
-              description="Descubra quais são os direitos trabalhistas que muitos profissionais deixam de exigir ao sair de um emprego." 
-              link="/artigos/direitos-demissao"
-            />
-            <ArticleCard 
-              title="Multa por excesso de velocidade – quando pode ser anulada?" 
-              description="Entenda em quais situações é possível recorrer de multas por excesso de velocidade com chances de sucesso." 
-              link="/artigos/multa-velocidade"
-            />
-            <ArticleCard 
-              title="Como calcular pensão de filho maior de 18 anos?" 
-              description="Saiba como é feito o cálculo da pensão alimentícia para filhos que já atingiram a maioridade." 
-              link="/artigos/pensao-maior-idade"
-            />
+            <Link href="/artigos/direitos-demissao">
+              <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-900 mb-3">5 direitos que todo trabalhador esquece ao pedir demissão</h3>
+                  <p className="text-gray-600 mb-4">Descubra quais são os direitos trabalhistas que muitos profissionais deixam de exigir ao sair de um emprego.</p>
+                  <span className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Ler mais →</span>
+                </div>
+              </div>
+            </Link>
+            
+            <Link href="/artigos/multa-velocidade">
+              <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-900 mb-3">Multa por excesso de velocidade – quando pode ser anulada?</h3>
+                  <p className="text-gray-600 mb-4">Entenda em quais situações é possível recorrer de multas por excesso de velocidade com chances de sucesso.</p>
+                  <span className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Ler mais →</span>
+                </div>
+              </div>
+            </Link>
+            
+            <Link href="/artigos/pensao-maior-idade">
+              <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-blue-900 mb-3">Como calcular pensão de filho maior de 18 anos?</h3>
+                  <p className="text-gray-600 mb-4">Saiba como é feito o cálculo da pensão alimentícia para filhos que já atingiram a maioridade.</p>
+                  <span className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">Ler mais →</span>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer id="contato" className="bg-blue-900 text-white pt-16 pb-8">
+      <footer className="bg-blue-900 text-white pt-16 pb-8">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div>
               <h3 className="text-xl font-bold mb-4 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-yellow-500">Institucional</h3>
               <ul className="space-y-2">
-                <li><Link href="/sobre" className="text-gray-300 hover:text-white transition-colors">Sobre</Link></li>
-                <li><Link href="/blog" className="text-gray-300 hover:text-white transition-colors">Blog</Link></li>
+                <li><Link href="/" className="text-gray-300 hover:text-white transition-colors">Início</Link></li>
+                <li><Link href="/artigos" className="text-gray-300 hover:text-white transition-colors">Artigos</Link></li>
+                <li><Link href="/modelos" className="text-gray-300 hover:text-white transition-colors">Modelos</Link></li>
+                <li><Link href="/consultoria" className="text-gray-300 hover:text-white transition-colors">Consultoria</Link></li>
                 <li><Link href="/contato" className="text-gray-300 hover:text-white transition-colors">Contato</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-4 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-yellow-500">Políticas</h3>
+              <ul className="space-y-2">
+                <li><Link href="/politica-de-privacidade" className="text-gray-300 hover:text-white transition-colors">Privacidade</Link></li>
+                <li><Link href="/termos-de-uso" className="text-gray-300 hover:text-white transition-colors">Termos</Link></li>
+                <li><Link href="/cookies" className="text-gray-300 hover:text-white transition-colors">Cookies</Link></li>
               </ul>
             </div>
             <div>
@@ -231,14 +295,6 @@ export default function Home() {
                 <li><Link href="/consultoria" className="text-gray-300 hover:text-white transition-colors">Consultoria</Link></li>
                 <li><Link href="/calculadoras" className="text-gray-300 hover:text-white transition-colors">Calculadoras</Link></li>
                 <li><Link href="/modelos" className="text-gray-300 hover:text-white transition-colors">Modelos</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-yellow-500">Legal</h3>
-              <ul className="space-y-2">
-                <li><Link href="/politica-de-privacidade" className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</Link></li>
-                <li><Link href="/termos-de-uso" className="text-gray-300 hover:text-white transition-colors">Termos de Uso</Link></li>
-                <li><Link href="/cookies" className="text-gray-300 hover:text-white transition-colors">Cookies</Link></li>
               </ul>
             </div>
             <div>
@@ -253,7 +309,9 @@ export default function Home() {
                 </div>
                 <div className="flex items-center">
                   <i className="fas fa-phone mr-3 text-yellow-500"></i>
-                  <div>(71) 98454-2241</div>
+                  <div>
+                    <a href="https://wa.me/5571986482241" className="text-gray-300 hover:text-white transition-colors">71 98648-2241</a>
+                  </div>
                 </div>
                 <div className="flex items-center">
                   <i className="fas fa-envelope mr-3 text-yellow-500"></i>
@@ -278,43 +336,5 @@ export default function Home() {
         </a>
       </div>
     </>
-  );
-}
-
-// Componente para os cards de features
-function FeatureCard({ icon, title, description }: { icon: string; title: string; description: string }) {
-  return (
-    <div className="bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-      <div className="text-4xl text-blue-600 mb-4">
-        <i className={icon}></i>
-      </div>
-      <h3 className="text-xl font-bold text-blue-900 mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
-    </div>
-  );
-}
-
-// Componente para os itens de estatística
-function StatItem({ number, text }: { number: string; text: string }) {
-  return (
-    <div>
-      <h3 className="text-4xl font-bold mb-2">{number}</h3>
-      <p className="text-xl opacity-90">{text}</p>
-    </div>
-  );
-}
-
-// Componente para os cards de artigos
-function ArticleCard({ title, description, link }: { title: string; description: string; link: string }) {
-  return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-blue-900 mb-3">{title}</h3>
-        <p className="text-gray-600 mb-4">{description}</p>
-        <Link href={link} className="text-blue-600 font-semibold hover:text-blue-800 transition-colors">
-          Ler mais →
-        </Link>
-      </div>
-    </div>
   );
 }
