@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-yellow-500">Institucional</h3>
+            <h3 className="text-xl font-bold mb-4">Institucional</h3>
             <ul className="space-y-2">
               <li><Link href="/" className="text-gray-300 hover:text-white transition-colors">Início</Link></li>
               <li><Link href="/artigos" className="text-gray-300 hover:text-white transition-colors">Artigos</Link></li>
@@ -14,7 +14,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-yellow-500">Serviços</h3>
+            <h3 className="text-xl font-bold mb-4">Serviços</h3>
             <ul className="space-y-2">
               <li><Link href="/consultoria" className="text-gray-300 hover:text-white transition-colors">Consultoria</Link></li>
               <li><Link href="/calculadoras" className="text-gray-300 hover:text-white transition-colors">Calculadoras</Link></li>
@@ -22,7 +22,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-yellow-500">Legal</h3>
+            <h3 className="text-xl font-bold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li><Link href="/politica-de-privacidade" className="text-gray-300 hover:text-white transition-colors">Política de Privacidade</Link></li>
               <li><Link href="/termos-de-uso" className="text-gray-300 hover:text-white transition-colors">Termos de Uso</Link></li>
@@ -30,7 +30,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-yellow-500">Contato</h3>
+            <h3 className="text-xl font-bold mb-4">Contato</h3>
             <div className="space-y-4">
               <div className="flex items-start">
                 <div className="text-yellow-500 mr-3">👤</div>
