@@ -18,8 +18,8 @@ export default function ConsultoriaPage() {
             <h3 className="text-xl font-semibold text-gray-700 mb-2">Consultoria para Escritórios</h3>
             <ul className="text-gray-600 list-disc list-inside space-y-1">
               <li>Gestão de escritório</li>
-              <li>Optimização de processos</li>
-              <li>Technology legal</li>
+              <li>Otimização de processos</li>
+              <li>Tecnologia legal</li>
               <li>Marketing jurídico</li>
             </ul>
           </div>
