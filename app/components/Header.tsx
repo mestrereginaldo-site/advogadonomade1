@@ -8,12 +8,10 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-blue-900">
           Advogado <span className="text-yellow-600">Nômade</span>
         </Link>
 
-        {/* Desktop Menu */}
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
             <li><Link href="/" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Início</Link></li>
@@ -26,10 +24,9 @@ export default function Header() {
           </ul>
         </nav>
 
-        {/* Mobile Menu */}
         <div className="md:hidden">
           <button onClick={() => setOpen(!open)} className="text-2xl text-gray-800">
-            <i className="fas fa-bars"></i>
+            ☰
           </button>
           {open && (
             <div className="absolute top-full left-0 right-0 bg-white shadow-lg border-t">
