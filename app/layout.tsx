@@ -1,11 +1,13 @@
 // app/layout.tsx
 import "./globals.css";
 import { Metadata } from "next";
-import Link from "next/link";
+import Header from "../components/Header";
+import WhatsAppFloat from "../components/WhatsAppFloat";
 
 export const metadata: Metadata = {
-  title: "Advogado Nômade - Direito de Qualquer Lugar",
-  description: "Consultoria jurídica online 24h. Contratos, LGPD, startups, direito digital. WhatsApp 5 min.",
+  title: "Advogado Nômade - Consultoria Jurídica 100% Online",
+  description: "Advogado online que atende em todo Brasil. Direito trabalhista, trânsito, família, LGPD, contratos. Resposta em 5min via WhatsApp.",
+  keywords: "advogado online, consultoria jurídica, direito digital, advogado trabalhista, direito trânsito",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -15,33 +17,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
       </head>
       <body className="min-h-screen flex flex-col bg-white text-black">
-        {/* Header */}
-        <header className="bg-white shadow-sm sticky top-0 z-50">
-          <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div className="logo">
-              <Link href="/" className="text-2xl font-bold text-blue-900">
-                Advogado <span className="text-yellow-600">Nômade</span>
-              </Link>
-            </div>
-            <nav className="hidden md:block">
-              <ul className="flex space-x-8">
-                <li><Link href="/" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Início</Link></li>
-                <li><Link href="/artigos" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Artigos</Link></li>
-                <li><Link href="/modelos" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Modelos</Link></li>
-                <li><Link href="/calculadoras" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Calculadoras</Link></li>
-                <li><Link href="/consultoria" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Consultoria</Link></li>
-                <li><Link href="/contato" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Contato</Link></li>
-                <li><Link href="/onde-estou" className="text-gray-800 hover:text-blue-600 font-medium transition-colors">Onde Estou</Link></li>
-              </ul>
-            </nav>
-            <div className="mobile-menu md:hidden text-2xl">
-              <i className="fas fa-bars"></i>
-            </div>
-          </div>
-        </header>
-
+        <Header />
         <main className="flex-1">{children}</main>
-
+        
         {/* Footer */}
         <footer className="bg-blue-900 text-white pt-16 pb-8">
           <div className="max-w-6xl mx-auto px-4">
@@ -101,15 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </footer>
 
-        {/* WhatsApp Floating Button */}
-        <div className="fixed bottom-6 right-6 z-50">
-          <a
-            href="https://wa.me/5571986482241?text=Preciso%20de%20um%20advogado%20agora"
-            className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-full shadow-lg flex items-center gap-2"
-          >
-            <i className="fab fa-whatsapp"></i> WhatsApp
-          </a>
-        </div>
+        <WhatsAppFloat />
       </body>
     </html>
   );
