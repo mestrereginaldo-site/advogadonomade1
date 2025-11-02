@@ -6,10 +6,10 @@ const dataAtual = "15/10/2025";
 
 export default function OndeEstou() {
   return (
-    <main className="min-h-screen bg-white text-black">
-      <div className="max-w-4xl mx-auto px-4 py-10 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">Onde Estou Hoje</h1>
-        <p className="text-lg mb-6">
+    <section className="py-16 bg-white">
+      <div className="max-w-4xl mx-auto px-4 text-center">
+        <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Onde Estou Hoje</h1>
+        <p className="text-lg mb-6 text-gray-600">
           Atendimento online em <strong>qualquer cidade do Brasil</strong>. Hoje estou em:
         </p>
 
@@ -37,7 +37,7 @@ export default function OndeEstou() {
 
         {/* CTA FINAL (lead magnet) */}
         <div className="text-center">
-          <Link href="/consultoria" className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg">
+          <Link href="/consultoria" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg">
             Falar comigo em qualquer cidade
           </Link>
         </div>
@@ -57,6 +57,6 @@ export default function OndeEstou() {
           </Link>
         </div>
       </div>
-    </main>
+    </section>
   );
 }
