@@ -18,6 +18,7 @@ function EmailCapture() {
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_next" value="https://advogadonomade.com.br/obrigado" />
+      <input type="hidden" name="_autoresponse" value="Obrigado por se cadastrar! Em breve você receberá nossas dicas jurídicas exclusivas. - Dr. Reginaldo Oliveira" />
       
       <input
         type="email"
