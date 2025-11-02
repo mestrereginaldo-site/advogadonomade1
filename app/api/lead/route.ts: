@@ -1,0 +1,34 @@
+import { NextRequest, NextResponse } from 'next/server';
+import nodemailer from 'nodemailer';
+
+export async function POST(request: NextRequest) {
+  try {
+    const { email } = await request.json();
+
+    // Configurar o transporte do nodemailer
+    const transporter = nodemailer.createTransport({
+      service: 'gmail', // ou outro serviço de e-mail
+      auth: {
+        user: process.env.EMAIL_USER, // seu e-mail
+        pass: process.env.EMAIL_PASS, // sua senha de app
+      },
+    });
+
+    // Configurar o e-mail
+    const mailOptions = {
+      from: process.env.EMAIL_USER,
+      to: 'adv.regi.silva@example.com', // substitua pelo seu e-mail
+      subject: 'Novo lead capturado',
+      text: `Novo lead: ${email}`,
+      html: `<p>Novo lead: ${email}</p>`,
+    };
+
+    // Enviar e-mail
+    await transporter.sendMail(mailOptions);
+
+    return NextResponse.json({ message: 'E-mail enviado com sucesso!' }, { status: 200 });
+  } catch (error) {
+    console.error(error);
+    return NextResponse.json({ message: 'Erro ao enviar e-mail' }, { status: 500 });
+  }
+}
