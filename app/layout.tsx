@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-BR">
       <body className="min-h-screen flex flex-col bg-white text-black">
         <Header />
-        <main className="flex-1 pt-20"> {/* Reduzi para pt-20 pois o header azul é menor */}
+        <main className="flex-1 pt-20">
           {children}
         </main>
         <Footer />
