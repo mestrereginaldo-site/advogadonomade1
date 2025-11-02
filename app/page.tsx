@@ -1,41 +1,11 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "./components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "Advogado Nômade | Consultoria Jurídica 100% Online em Todo Brasil",
   description: "Advogado online que atende em qualquer cidade do Brasil. Contratos, LGPD, rescisão, multas, pensão, direito digital. Resposta em 5 min via WhatsApp.",
 };
-
-// Componente de captura de emails
-function EmailCapture() {
-  return (
-    <form
-      action="https://formsubmit.co/ajax/adv.regi.silva@gmail.com"
-      method="POST"
-      className="flex flex-col sm:flex-row gap-4"
-    >
-      <input type="hidden" name="_subject" value="Novo lead - Newsletter Advogado Nômade" />
-      <input type="hidden" name="_template" value="table" />
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value="https://advogadonomade.com.br/obrigado" />
-      <input type="hidden" name="_autoresponse" value="Obrigado por se cadastrar! Em breve você receberá nossas dicas jurídicas exclusivas. - Dr. Reginaldo Oliveira" />
-      
-      <input
-        type="email"
-        name="email"
-        placeholder="Seu melhor e-mail"
-        required
-        className="flex-grow px-4 py-3 border border-gray-300 rounded-lg bg-white text-black"
-      />
-      <button
-        type="submit"
-        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
-      >
-        Cadastrar
-      </button>
-    </form>
-  );
-}
 
 export default function Home() {
   return (
