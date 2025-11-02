@@ -1,8 +1,10 @@
-// app/page.tsx
 import { Metadata } from "next";
 import Link from "next/link";
 
-// ... metadados (já existentes)
+export const metadata: Metadata = {
+  title: "Advogado Nômade | Consultoria Jurídica 100% Online em Todo Brasil",
+  description: "Advogado online que atende em qualquer cidade do Brasil. Contratos, LGPD, rescisão, multas, pensão, direito digital. Resposta em 5 min via WhatsApp.",
+};
 
 export default function Home() {
   return (
@@ -11,20 +13,20 @@ export default function Home() {
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Advogado Nômade</h1>
-          <p className="text-lg md:text-xl mb-6">Direito de qualquer lugar, para qualquer pessoa, a qualquer hora.</p>
-          <p className="mb-8 text-amber-400">
+          <p className="text-xl mb-6">Direito de qualquer lugar, para qualquer pessoa, a qualquer hora.</p>
+          <p className="mb-8 text-yellow-300">
             📍 Hoje atendendo de <span className="font-semibold">Florianópolis/SC</span> → resposta em 5 min
           </p>
-          <Link
+          <a
             href="https://wa.me/5571986482241?text=Preciso%20de%20um%20advogado%20agora"
             className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"
           >
             <i className="fab fa-whatsapp"></i> Falar com advogado no WhatsApp
-          </Link>
+          </a>
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Calculadoras Section */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
@@ -32,10 +34,30 @@ export default function Home() {
             <p className="text-gray-600 max-w-2xl mx-auto">Estime valores em segundos. Resultados são referências – confirme com nosso advogado.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <CardLink title="Rescisão Trabalhista" desc="13º, férias, FGTS e aviso prévio." href="/calculadoras" />
-            <CardLink title="Multas de Trânsito" desc="Valor + pontos na CNH." href="/calculadoras" />
-            <CardLink title="Indenização Moral" desc="Faixa para danos morais." href="/calculadoras" />
-            <CardLink title="Pensão Alimentícia" desc="Por filho, com gastos extras." href="/calculadoras" />
+            <CardLink 
+              title="Rescisão Trabalhista" 
+              desc="13º, férias, FGTS e aviso prévio." 
+              href="/calculadoras" 
+              icon="fas fa-balance-scale"
+            />
+            <CardLink 
+              title="Multas de Trânsito" 
+              desc="Valor + pontos na CNH." 
+              href="/calculadoras" 
+              icon="fas fa-car"
+            />
+            <CardLink 
+              title="Indenização Moral" 
+              desc="Faixa para danos morais." 
+              href="/calculadoras" 
+              icon="fas fa-gavel"
+            />
+            <CardLink 
+              title="Pensão Alimentícia" 
+              desc="Por filho, com gastos extras." 
+              href="/calculadoras" 
+              icon="fas fa-hand-holding-usd"
+            />
           </div>
         </div>
       </section>
@@ -116,10 +138,13 @@ export default function Home() {
   );
 }
 
-// Componente para os cards de features
-function CardLink({ title, desc, href }: { title: string; desc: string; href: string }) {
+// Componente para os cards de calculadoras
+function CardLink({ title, desc, href, icon }: { title: string; desc: string; href: string; icon: string }) {
   return (
     <Link href={href} className="block bg-white rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow border border-gray-100">
+      <div className="text-4xl text-blue-600 mb-4">
+        <i className={icon}></i>
+      </div>
       <h3 className="text-xl font-bold text-blue-900 mb-2">{title}</h3>
       <p className="text-gray-600">{desc}</p>
     </Link>
