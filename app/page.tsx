@@ -16,7 +16,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Advogado Nômade</h1>
           <p className="text-xl mb-6">Direito de qualquer lugar, para qualquer pessoa, a qualquer hora.</p>
           <p className="mb-8 text-yellow-300">
-            📍 Hoje atendendo de <span className="font-semibold">Florianópolis/SC</span> → resposta em 5 min
+            📍 Hoje atendendo de <span className="font-semibold">Salvador/BA</span> → resposta em 5 min
           </p>
           <a
             href="https://wa.me/5571986482241?text=Preciso%20de%20um%20advogado%20agora"
