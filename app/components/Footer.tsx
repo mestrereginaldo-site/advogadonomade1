@@ -33,14 +33,14 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-10 after:h-0.5 after:bg-yellow-500">Contato</h3>
             <div className="space-y-4">
               <div className="flex items-start">
-                <i className="fas fa-user mt-1 mr-3 text-yellow-500"></i>
+                <div className="text-yellow-500 mr-3">👤</div>
                 <div>
                   <strong>Dr. Reginaldo Oliveira</strong><br />
                   OAB/SC 57.879
                 </div>
               </div>
               <div className="flex items-center">
-                <i className="fas fa-phone mr-3 text-yellow-500"></i>
+                <div className="text-yellow-500 mr-3">📞</div>
                 <div>
                   <a href="https://wa.me/5571986482241" className="text-gray-300 hover:text-white transition-colors">
                     71 98648-2241
@@ -48,7 +48,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="flex items-center">
-                <i className="fas fa-map-marker-alt mr-3 text-yellow-500"></i>
+                <div className="text-yellow-500 mr-3">📍</div>
                 <div>Salvador/BA – Brasil</div>
               </div>
             </div>
