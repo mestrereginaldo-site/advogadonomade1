@@ -1,4 +1,3 @@
-// app/layout.tsx
 import "./globals.css";
 import { Metadata } from "next";
 import Header from "./components/Header";
