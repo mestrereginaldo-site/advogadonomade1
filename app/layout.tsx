@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   description: "Advogado online que atende em todo Brasil. Direito trabalhista, trânsito, família, LGPD, contratos. Resposta em 5min via WhatsApp.",
   keywords: "advogado online, consultoria jurídica, direito digital, advogado trabalhista, direito trânsito",
   icons: {
-    icon: '/icon.png',
-    apple: '/apple-icon.png',
+    icon: '/icon.png', // Certifique-se de que este arquivo existe na pasta public
+    apple: '/apple-icon.png', // Opcional
   },
 };
 
