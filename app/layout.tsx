@@ -8,9 +8,6 @@ export const metadata: Metadata = {
   title: "Advogado Nômade - Consultoria Jurídica 100% Online",
   description: "Advogado online que atende em todo Brasil. Direito trabalhista, trânsito, família, LGPD, contratos. Resposta em 5min via WhatsApp.",
   keywords: "advogado online, consultoria jurídica, direito digital, advogado trabalhista, direito trânsito",
-  icons: {
-    icon: '/icon.png',
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
