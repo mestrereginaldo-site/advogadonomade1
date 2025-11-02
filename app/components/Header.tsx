@@ -6,12 +6,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-white fixed top-0 left-0 right-0 z-50" style={{ 
-      borderBottom: 'none', 
-      boxShadow: 'none',
-      outline: 'none'
-    }}>
-      <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center bg-white">
+    <header className="bg-white fixed top-0 left-0 right-0 z-50">
+      <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-3">
           <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-xl">AN</span>
