@@ -6,6 +6,36 @@ export const metadata: Metadata = {
   description: "Advogado online que atende em qualquer cidade do Brasil. Contratos, LGPD, rescisão, multas, pensão, direito digital. Resposta em 5 min via WhatsApp.",
 };
 
+// Componente de captura de emails
+function EmailCapture() {
+  return (
+    <form
+      action="https://formsubmit.co/ajax/adv.regi.silva@gmail.com"
+      method="POST"
+      className="flex flex-col sm:flex-row gap-4"
+    >
+      <input type="hidden" name="_subject" value="Novo lead - Newsletter Advogado Nômade" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://advogadonomade.com.br/obrigado" />
+      
+      <input
+        type="email"
+        name="email"
+        placeholder="Seu melhor e-mail"
+        required
+        className="flex-grow px-4 py-3 border border-gray-300 rounded-lg bg-white text-black"
+      />
+      <button
+        type="submit"
+        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+      >
+        Cadastrar
+      </button>
+    </form>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -78,29 +108,7 @@ export default function Home() {
         <div className="max-w-2xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-blue-900 mb-4">📬 Dicas jurídicas de graça</h2>
           <p className="text-gray-600 mb-8">1 e-mail por semana, 2 min de leitura, sempre útil.</p>
-          <form
-            action="https://api.staticforms.xyz/submit"
-            method="POST"
-            className="flex flex-col sm:flex-row gap-4"
-          >
-            <input type="hidden" name="accessKey" value="1f2a3b4c-5d6e-7f8g-9h0i-1j2k3l4m5n6o" />
-            <input type="hidden" name="subject" value="Novo lead – Newsletter Advogado Nômade" />
-            <input type="hidden" name="redirectTo" value="https://advogadonomade.com.br/obrigado" />
-            
-            <input
-              type="email"
-              name="email"
-              placeholder="Seu melhor e-mail"
-              required
-              className="flex-grow px-4 py-3 border border-gray-300 rounded-lg bg-white text-black"
-            />
-            <button
-              type="submit"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
-            >
-              Cadastrar
-            </button>
-          </form>
+          <EmailCapture />
         </div>
       </section>
 
