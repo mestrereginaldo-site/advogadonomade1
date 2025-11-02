@@ -4,7 +4,7 @@ export default function Onde() {
       <div className="max-w-4xl mx-auto px-4 py-10">
         <div className="text-center mb-8">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-            Hoje trabalhando de Florianópolis/SC • 03/11/2025
+            Atualmente trabalhando de Salvador/BA • 01/11/2025
           </h1>
           <p className="text-lg text-gray-600 mb-6">
             Atendo online em qualquer cidade do Brasil. OAB/SC 57.879
