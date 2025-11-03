@@ -6,17 +6,17 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-white border-b border-gray-200 fixed top-0 left-0 right-0 z-50">
+    <header className="bg-white fixed top-0 left-0 right-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-3">
           <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
             <span className="text-blue-900 font-bold text-xl">AN</span>
           </div>
           <div>
-            <div className="text-2xl font-bold text-white leading-tight">
+            <div className="text-2xl font-bold text-blue-900 leading-tight">
               Advogado <span className="text-yellow-300">Nômade</span>
             </div>
-            <div className="text-sm text-blue-200 leading-tight">
+            <div className="text-sm text-blue-700 leading-tight">
               Dr. Reginaldo Oliveira
             </div>
           </div>
@@ -39,7 +39,7 @@ export default function Header() {
             ☰
           </button>
           {open && (
-            <div className="absolute top-full left-0 right-0 bg-white border-b border-gray-200">
+            <div className="absolute top-full left-0 right-0 bg-white">
               <div className="flex flex-col p-4 space-y-4">
                 <Link href="/" onClick={() => setOpen(false)} className="text-blue-900 hover:text-yellow-300 font-medium">Início</Link>
                 <Link href="/artigos" onClick={() => setOpen(false)} className="text-blue-900 hover:text-yellow-300 font-medium">Artigos</Link>
