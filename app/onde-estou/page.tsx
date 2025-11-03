@@ -7,7 +7,7 @@ export default function Onde() {
             Atualmente trabalhando de Salvador/BA • 01/11/2025
           </h1>
           <p className="text-lg text-gray-600 mb-6">
-            Atendo online em qualquer cidade do Brasil. OAB/SC 57.879
+            Atendo online de qualquer cidade do Brasil. OAB/SC 57.879
           </p>
         </div>
 
@@ -27,7 +27,7 @@ export default function Onde() {
               target="_blank"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-lg"
             >
-              Falar comigo em qualquer cidade
+              Falar comigo de qualquer cidade
             </a>
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function Onde() {
           <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
             <h3 className="text-lg font-semibold text-blue-800 mb-3">📍 Atendimento Presencial</h3>
             <p className="text-blue-700">
-              Florianópolis/SC<br/>
+              Salvador/BA<br/>
               Agendamento prévio necessário
             </p>
           </div>
