@@ -37,8 +37,8 @@ export default function Cookies() {
         <h2 className="text-xl font-semibold mt-6 mb-2">5. Contato</h2>
         <p>
           Dúvidas? Entre em contato:{" "}
-          <a href="https://wa.me/5588999999999" className="text-green-600 underline">
-            88 99999-9999
+          <a href="https://wa.me/5571986482241" className="text-green-600 underline">
+            71 98648-2241
           </a>
         </p>
       </div>
