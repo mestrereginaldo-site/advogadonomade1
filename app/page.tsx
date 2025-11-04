@@ -14,8 +14,7 @@ export default function Home() {
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Advogado Nômade</h1>
-          <p className="text-xl mb-6">Atuação 100% digital em Crimes de Colarinho Branco, Direito Penal Empresarial e Recursos aos Tribunais Superiores. 
-            Mais agilidade e expertise para sua defesa.</p>
+          <p className="text-xl mb-6">Defesa Penal Estratégica para Empresas e Casos Complexos</p>
           <p className="mb-8 text-yellow-300">
             📍 Atendimento Remoto para todo o Brasil <span className="font-semibold"></span> → Resposta em até 5 minutos
           </p>
