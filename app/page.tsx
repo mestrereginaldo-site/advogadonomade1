@@ -38,9 +38,6 @@ export default function Home() {
     >
       Falar no WhatsApp
     </a>
-    
-    <div className="text-white mt-4">
-      ou <strong>DIAGNÓSTICO GRATUITO - 30 MIN</strong>
     </div>
   </div>
 </section>
