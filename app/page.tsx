@@ -47,7 +47,7 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-blue-900 mb-4">🧮 Calculadoras Jurídicas Grátis</h2>
+            <h2 className="text-3xl font-bold text-blue-900 mb-4">🧮 Calculadoras Jurídicas</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">Estime valores em segundos. Resultados são referências – confirme com nosso advogado.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -93,7 +93,7 @@ export default function Home() {
       {/* Newsletter */}
       <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-blue-900 mb-4">📬 Dicas jurídicas de graça</h2>
+          <h2 className="text-3xl font-bold text-blue-900 mb-4">📬Dicas jurídicas no e-mail</h2>
           <p className="text-gray-600 mb-8">1 e-mail por semana, 2 min de leitura, sempre útil.</p>
           <EmailCapture />
         </div>
