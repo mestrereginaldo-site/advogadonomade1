@@ -109,20 +109,20 @@ export default function Artigo() {
 
           <h2>Modelo de petição inicial (grátis)</h2>
           <pre className="bg-gray-100 p-3 rounded text-sm">
-          {`EXMO. SR. JUIZ DE DIREITO DA __VARA DE FAMÍLIA DA COMARCA DE __
+      {`EXMO. SR. JUIZ DE DIREITO DA __VARA DE FAMÍLIA DA COMARCA DE __
 
-          Petição inicial – revisão de pensão alimentícia
+      Petição inicial – revisão de pensão alimentícia
 
-          1. Qualificação das partes (nome, CPF, endereço)
-          2. Fundamentação: filho universitário, art. 1.694, § 2º, CC.
-          3. Pedido: fixar pensão de 25 % sobre renda de R$ 5.000,00 + 50 % 
-          dos gastos extras (comprovantes anexos).
+      1. Qualificação das partes (nome, CPF, endereço)
+      2. Fundamentação: filho universitário, art. 1.694, § 2º, CC.
+      3. Pedido: fixar pensão de 25 % sobre renda de R$ 5.000,00 + 50 % 
+      dos gastos extras (comprovantes anexos).
 
-          Anexos: matrícula, frequência, extratos, laudo (se houver).
+      Anexos: matrícula, frequência, extratos, laudo (se houver).
 
-          Local e data
-          ___________________
-          Assinatura do genitor`}
+      Local e data
+      ___________________
+      Assinatura do genitor`}
           </pre>
         </article>
 
