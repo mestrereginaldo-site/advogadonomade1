@@ -11,25 +11,24 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 text-center">
-        <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Advogado Nômade</h1>
-          <p className="text-xl mb-6">Proteção Penal & LGPD para Empresas</p>
-          • Crimes de Colarinho Branco
-          • Compliance Penal e LGPD  
-          • Direito Digital e Defesa de Influencers
-          
-          <p className="mb-8 text-yellow-300">
-          
-          </p>
-          <a
-            href="https://wa.me/5571986482241?text=Preciso%20de%20um%20advogado%20agora"
-            className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"
-          >
-            📱 DIAGNÓSTICO GRATUITO - 30 MIN
-          </a>
-        </div>
-      </section>
+<section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 text-center">
+  <div className="max-w-4xl mx-auto px-4">
+    <h1 className="text-4xl md:text-5xl font-bold mb-6">Advogado Nômade</h1>
+    <p className="text-xl mb-6">Sua Empresa Protegida Legalmente</p>
+    
+    {/* AQUI - Adicione uma div com classe de texto para controlar o tamanho */}
+    <div className="text-xl md:text-2xl space-y-3 mb-8">
+      <div>✓ Crimes de Colarinho Branco</div>
+      <div>✓ Compliance LGPD (Evite Multas de R$ 50Mi+)</div>
+      <div>✓ Defesa em Direito Digital</div>
+    </div>
+
+    {/* Botão CTA */}
+    <button className="bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition duration-300">
+      DIAGNÓSTICO GRATUITO - 30 MIN
+    </button>
+  </div>
+</section>
 
       {/* Calculadoras Section */}
       <section className="py-16 bg-white">
