@@ -13,14 +13,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-8">Advogado Nômade</h1>
-          <p className="text-xl mb-6">Sua Empresa Protegida Legalmente</p>
-          ✓ Crimes de Colarinho Branco
-          ✓ Compliance LGPD (Evite Multas de R$ 50Mi+)
-          ✓ Defesa em Direito Digital
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Advogado Nômade</h1>
+          <p className="text-xl mb-6">Proteção Penal & LGPD para Empresas</p>
+          • Crimes de Colarinho Branco
+          • Compliance Penal e LGPD  
+          • Direito Digital e Defesa de Influencers
           
           <p className="mb-8 text-yellow-300">
-            📍 Atendimento Remoto para todo o Brasil <span className="font-semibold"></span> → Resposta em até 5 minutos
           </p>
           <a
             href="https://wa.me/5571986482241?text=Preciso%20de%20um%20advogado%20agora"
