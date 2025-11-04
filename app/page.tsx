@@ -10,13 +10,13 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-     {/* Hero Section */}
+   {/* Hero Section */}
 <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 text-center">
   <div className="max-w-4xl mx-auto px-4">
-    <h1 className="text-4xl md:text-5xl font-bold mb-4">Advogado Nômade</h1>
+    <h1 className="text-5xl md:text-6xl font-bold mb-4">Advogado Nômade</h1>
     <p className="text-xl md:text-2xl mb-6">Sua Empresa Protegida Legalmente</p>
     
-    {/* Especialidades com tamanho reduzido */}
+    {/* Especialidades */}
     <div className="text-lg md:text-xl space-y-2 mb-8">
       <div className="flex items-center justify-center">
         <span className="mr-2">✓</span> Crimes de Colarinho Branco
@@ -29,16 +29,15 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Botão do WhatsApp SEM número visível */}
+    {/* Botão do WhatsApp */}
     <a 
       href="https://wa.me/5571986482241?text=Olá!%20Gostaria%20de%20solicitar%20um%20diagnóstico%20gratuito." 
       target="_blank" 
       rel="noopener noreferrer"
-      className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition duration-300 mb-4"
+      className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition duration-300"
     >
       Falar no WhatsApp
     </a>
-    </div>
   </div>
 </section>
 
