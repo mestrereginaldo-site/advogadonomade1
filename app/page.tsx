@@ -18,8 +18,8 @@ export default function Home() {
           ✓ Crimes de Colarinho Branco
           ✓ Compliance LGPD (Evite Multas de R$ 50Mi+)
           ✓ Defesa em Direito Digital
+          
           <p className="mb-8 text-yellow-300">
-            
             📍 Atendimento Remoto para todo o Brasil <span className="font-semibold"></span> → Resposta em até 5 minutos
           </p>
           <a
