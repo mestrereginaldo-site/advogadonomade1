@@ -14,7 +14,7 @@ export default function Home() {
 <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 text-center">
   <div className="max-w-4xl mx-auto px-4">
     <h1 className="text-5xl md:text-6xl font-bold mb-4">
-  Advogado <span className="text-yellow-600">Nômade</span>
+  Advogado <span className="text-yellow-500">Nômade</span>
 </h1>
     <p className="text-xl md:text-2xl mb-6">Sua Empresa Protegida Legalmente</p>
     
