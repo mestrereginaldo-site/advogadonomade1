@@ -14,10 +14,10 @@ export default function Home() {
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Advogado Nômade</h1>
-          <p className="text-xl mb-6">Defesa Penal Estratégica para Empresas e Casos Complexos</p>
-          • Crimes de Colarinho Branco
-          • Direito Penal Empresarial  
-          • Recursos aos Tribunais Superiores
+          <p className="text-xl mb-6">Sua Empresa Protegida Legalmente</p>
+          ✓ Crimes de Colarinho Branco
+          ✓ Compliance LGPD (Evite Multas de R$ 50Mi+)
+          ✓ Defesa em Direito Digital
           <p className="mb-8 text-yellow-300">
             
             📍 Atendimento Remoto para todo o Brasil <span className="font-semibold"></span> → Resposta em até 5 minutos
@@ -26,7 +26,7 @@ export default function Home() {
             href="https://wa.me/5571986482241?text=Preciso%20de%20um%20advogado%20agora"
             className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"
           >
-            📱 AGENDAR CONSULTA ESTRATÉGICA
+            📱 DIAGNÓSTICO GRATUITO - 30 MIN
           </a>
         </div>
       </section>
