@@ -16,13 +16,13 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Advogado Nômade</h1>
           <p className="text-xl mb-6">Direito de qualquer lugar, para qualquer pessoa, a qualquer hora.</p>
           <p className="mb-8 text-yellow-300">
-            📍 Hoje atendendo de <span className="font-semibold">Salvador/BA</span> → resposta em 5 min
+            📍 Atendimento Remoto para todo o Brasil <span className="font-semibold"></span> → resposta em 5 min
           </p>
           <a
             href="https://wa.me/5571986482241?text=Preciso%20de%20um%20advogado%20agora"
             className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"
           >
-            📱 Falar com advogado no WhatsApp
+            📱 AGENDAR CONSULTA ESTRATÉGICA
           </a>
         </div>
       </section>
