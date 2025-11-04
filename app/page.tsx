@@ -14,9 +14,10 @@ export default function Home() {
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Advogado Nômade</h1>
-          <p className="text-xl mb-6">Direito de qualquer lugar, para qualquer pessoa, a qualquer hora.</p>
+          <p className="text-xl mb-6">Atuação 100% digital em Crimes de Colarinho Branco, Direito Penal Empresarial e Recursos aos Tribunais Superiores. 
+            Mais agilidade e expertise para sua defesa.</p>
           <p className="mb-8 text-yellow-300">
-            📍 Atendimento Remoto para todo o Brasil <span className="font-semibold"></span> → resposta em até 5 minutos
+            📍 Atendimento Remoto para todo o Brasil <span className="font-semibold"></span> → Resposta em até 5 minutos
           </p>
           <a
             href="https://wa.me/5571986482241?text=Preciso%20de%20um%20advogado%20agora"
