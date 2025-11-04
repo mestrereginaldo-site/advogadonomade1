@@ -17,7 +17,7 @@ export default function Home() {
     <p className="text-xl mb-6">Sua Empresa Protegida Legalmente</p>
     
     {/* AQUI - Adicione uma div com classe de texto para controlar o tamanho */}
-    <div className="text-xl md:text-2xl space-y-3 mb-8">
+    <div className="text-xl md:text-2xl space-y-3 mb-6">
       <div>✓ Crimes de Colarinho Branco</div>
       <div>✓ Compliance LGPD (Evite Multas de R$ 50Mi+)</div>
       <div>✓ Defesa em Direito Digital</div>
