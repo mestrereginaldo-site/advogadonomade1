@@ -20,6 +20,7 @@ export default function Home() {
           • Direito Digital e Defesa de Influencers
           
           <p className="mb-8 text-yellow-300">
+          
           </p>
           <a
             href="https://wa.me/5571986482241?text=Preciso%20de%20um%20advogado%20agora"
