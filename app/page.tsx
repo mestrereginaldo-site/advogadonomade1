@@ -10,23 +10,38 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
+     {/* Hero Section */}
 <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 text-center">
   <div className="max-w-4xl mx-auto px-4">
-    <h1 className="text-4xl md:text-5xl font-bold mb-6">Advogado Nômade</h1>
-    <p className="text-xl mb-6">Sua Empresa Protegida Legalmente</p>
+    <h1 className="text-4xl md:text-5xl font-bold mb-4">Advogado Nômade</h1>
+    <p className="text-xl md:text-2xl mb-6">Sua Empresa Protegida Legalmente</p>
     
-    {/* AQUI - Adicione uma div com classe de texto para controlar o tamanho */}
-    <div className="text-xl md:text-2xl space-y-3 mb-6">
-      <div>✓ Crimes de Colarinho Branco</div>
-      <div>✓ Compliance LGPD (Evite Multas de R$ 50Mi+)</div>
-      <div>✓ Defesa em Direito Digital</div>
+    {/* Especialidades com tamanho reduzido */}
+    <div className="text-lg md:text-xl space-y-2 mb-8">
+      <div className="flex items-center justify-center">
+        <span className="mr-2">✓</span> Crimes de Colarinho Branco
+      </div>
+      <div className="flex items-center justify-center">
+        <span className="mr-2">✓</span> Compliance LGPD (Evite Multas de R$ 50Mi+)
+      </div>
+      <div className="flex items-center justify-center">
+        <span className="mr-2">✓</span> Defesa em Direito Digital
+      </div>
     </div>
 
-    {/* Botão CTA */}
-    <button className="bg-yellow-500 hover:bg-yellow-400 text-blue-900 font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition duration-300">
-      DIAGNÓSTICO GRATUITO - 30 MIN
-    </button>
+    {/* Botão do WhatsApp SEM número visível */}
+    <a 
+      href="https://wa.me/5571986482241?text=Olá!%20Gostaria%20de%20solicitar%20um%20diagnóstico%20gratuito." 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition duration-300 mb-4"
+    >
+      Falar no WhatsApp
+    </a>
+    
+    <div className="text-white mt-4">
+      ou <strong>DIAGNÓSTICO GRATUITO - 30 MIN</strong>
+    </div>
   </div>
 </section>
 
