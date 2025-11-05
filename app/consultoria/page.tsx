@@ -51,31 +51,31 @@ export default function Consultoria() {
             <div className="inline-block bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
               MAIS POPULAR
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-gray-800">Plano Intermediário</h3>
-            <p className="text-4xl font-bold text-blue-600 mb-6">R$ 497</p>
+            <h3 className="text-2xl font-bold mb-4 text-gray-800">Orientação Jurídica Mensal  </h3>
+            <p className="text-4xl font-bold text-blue-600 mb-6">R$ 1.200/mês</p>
             <ul className="text-left space-y-3 mb-8 text-gray-700">
-              <li className="flex items-center">✅ <span className="ml-2">Até 3 temas jurídicos</span></li>
-              <li className="flex items-center">✅ <span className="ml-2">Modelos personalizados</span></li>
-              <li className="flex items-center">✅ <span className="ml-2">14 dias de suporte WhatsApp</span></li>
-              <li className="flex items-center">✅ <span className="ml-2">Revisão de documentos</span></li>
+              <li className="flex items-center">✅ <span className="ml-2">Até 3 consultas por mês</span></li>
+              <li className="flex items-center">✅ <span className="ml-2">Resposta em 12 horas</span></li>
+              <li className="flex items-center">✅ <span className="ml-2">Modelos de peças jurídicas</span></li>
+              <li className="flex items-center">✅ <span className="ml-2">Revisão de 2 documentos</span></li>
             </ul>
             <button onClick={() => window.open("https://wa.me/71986482241?text=Quero%20o%20Plano%20Intermediário%20R%24497", "_blank")} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition duration-300 text-lg">
-              Quero este plano
+              Contratar Plano Mensal
             </button>
           </div>
 
           {/* CARD R$ 997 */}
           <div className="border border-gray-300 rounded-xl p-8 text-center bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <h3 className="text-2xl font-bold mb-4 text-gray-800">Plano Premium</h3>
-            <p className="text-4xl font-bold text-blue-600 mb-6">R$ 997</p>
+            <h3 className="text-2xl font-bold mb-4 text-gray-800">Assessoria Completa</h3>
+            <p className="text-4xl font-bold text-blue-600 mb-6">R$ 2.500/mês</p>
             <ul className="text-left space-y-3 mb-8 text-gray-700">
-              <li className="flex items-center">✅ <span className="ml-2">30 dias ilimitado</span></li>
-              <li className="flex items-center">✅ <span className="ml-2">Modelos personalizados</span></li>
-              <li className="flex items-center">✅ <span className="ml-2">Suporte prioritário</span></li>
-              <li className="flex items-center">✅ <span className="ml-2">Call de 30 minutos</span></li>
+              <li className="flex items-center">✅ <span className="ml-2">Suporte jurídico prioritário</span></li>
+              <li className="flex items-center">✅ <span className="ml-2">Calls semanais de 30min</span></li>
+              <li className="flex items-center">✅ <span className="ml-2">Elaboração de modelos</span></li>
+              <li className="flex items-center">✅ <span className="ml-2">Análise preventiva de riscos</span></li>
             </ul>
             <button onClick={() => window.open("https://wa.me/71986482241?text=Quero%20o%20Plano%20Premium%20R%24997", "_blank")} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition duration-300 text-lg">
-              Quero este plano
+              Falar Sobre Assessoria
             </button>
           </div>
         </div>
