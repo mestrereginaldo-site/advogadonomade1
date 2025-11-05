@@ -41,7 +41,7 @@ export default function Consultoria() {
               <li className="flex items-center">✅ <span className="ml-2">Prazo: 24-48 horas</span></li>
               <li className="flex items-center">✅ <span className="ml-2">15min de suporte por WhatsApp</span></li>
             </ul>
-            <button onClick={() => window.open("https://wa.me/71986482241?text=Consulta%20o%20Jurídica%20Estratégica%20R%24450", "_blank")} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition duration-300 text-lg">
+            <button onClick={() => window.open("https://wa.me/71986482241?text=Consulta%20%20Jurídica%20Estratégica%20R%24450", "_blank")} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition duration-300 text-lg">
               Quero Esta Consultoria
             </button>
           </div>
@@ -59,7 +59,7 @@ export default function Consultoria() {
               <li className="flex items-center">✅ <span className="ml-2">Modelos de peças jurídicas</span></li>
               <li className="flex items-center">✅ <span className="ml-2">Revisão de 2 documentos</span></li>
             </ul>
-            <button onClick={() => window.open("https://wa.me/71986482241?text=Orientação%20o%20Jurídica%20Mensal%20R%241.200", "_blank")} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition duration-300 text-lg">
+            <button onClick={() => window.open("https://wa.me/71986482241?text=Orientação%20%20Jurídica%20Mensal%20R%241.200", "_blank")} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition duration-300 text-lg">
               Contratar Plano Mensal
             </button>
           </div>
@@ -74,7 +74,7 @@ export default function Consultoria() {
               <li className="flex items-center">✅ <span className="ml-2">Elaboração de modelos</span></li>
               <li className="flex items-center">✅ <span className="ml-2">Análise preventiva de riscos</span></li>
             </ul>
-            <button onClick={() => window.open("https://wa.me/71986482241?text=Assessoria%20o%20Completa%20Mensal%20R%242.500", "_blank")} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition duration-300 text-lg">
+            <button onClick={() => window.open("https://wa.me/71986482241?text=Assessoria%20%20Completa%20Mensal%20R%242.500", "_blank")} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition duration-300 text-lg">
               Falar Sobre Assessoria
             </button>
           </div>
