@@ -48,7 +48,7 @@ export default function Header() {
                 <Link href="/artigos" onClick={() => setOpen(false)} className="text-gray-800 hover:text-blue-600 font-medium">Artigos</Link>
                 <Link href="/modelos" onClick={() => setOpen(false)} className="text-gray-800 hover:text-blue-600 font-medium">Modelos</Link>
                 <Link href="/calculadoras" onClick={() => setOpen(false)} className="text-gray-800 hover:text-blue-600 font-medium">Calculadoras</Link>
-                <Link href="/consultoria" onClick={() => setOpen(false)} className="text-gray-800 hover:text-blue-600 font-medium">Consultoria</Link>
+                <Link href="/consultoria" onClick={() => setOpen(false)} className="text-yellow-600 hover:text-blue-600 font-medium">Consultoria</Link>
                 <Link href="/contato" onClick={() => setOpen(false)} className="text-gray-800 hover:text-blue-600 font-medium">Contato</Link>
                 <Link href="/onde-estou" onClick={() => setOpen(false)} className="text-gray-800 hover:text-blue-600 font-medium">Onde Estou</Link>
               </div>
