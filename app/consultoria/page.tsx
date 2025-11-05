@@ -33,15 +33,16 @@ export default function Consultoria() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* CARD R$ 197 */}
           <div className="border border-gray-300 rounded-xl p-8 text-center bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <h3 className="text-2xl font-bold mb-4 text-gray-800">Plano Básico</h3>
-            <p className="text-4xl font-bold text-blue-600 mb-6">R$ 197</p>
+            <h3 className="text-2xl font-bold mb-4 text-gray-800">Consulta Jurídica Estratégica</h3>
+            <p className="text-4xl font-bold text-blue-600 mb-6">R$ 450</p>
             <ul className="text-left space-y-3 mb-8 text-gray-700">
-              <li className="flex items-center">✅ <span className="ml-2">1 tema jurídico</span></li>
-              <li className="flex items-center">✅ <span className="ml-2">Orientação por escrita</span></li>
-              <li className="flex items-center">✅ <span className="ml-2">7 dias de suporte WhatsApp</span></li>
+              <li className="flex items-center">✅ <span className="ml-2">Análise personalizada do seu caso</span></li>
+              <li className="flex items-center">✅ <span className="ml-2">Estratégia defensiva por escrito</span></li>
+              <li className="flex items-center">✅ <span className="ml-2">Prazo: 24-48 horas</span></li>
+              <li className="flex items-center">✅ <span className="ml-2">15min de suporte por WhatsApp</span></li>
             </ul>
             <button onClick={() => window.open("https://wa.me/71986482241?text=Quero%20o%20Plano%20Básico%20R%24197", "_blank")} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg transition duration-300 text-lg">
-              Quero este plano
+              Quero Esta Consultoria
             </button>
           </div>
 
