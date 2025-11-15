@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "./components/EmailCapture";
+import AdSenseScript from "./components/AdSenseScript";
 
 export const metadata: Metadata = {
   title: "Advogado Nômade | Consultoria Jurídica 100% Online em Todo Brasil",
