@@ -3,6 +3,7 @@ import "./globals.css";
 import { Metadata } from "next";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import AdSenseScript from "./components/AdSenseScript";
 
 export const metadata: Metadata = {
   title: "Advogado Nômade - Direito de Qualquer Lugar",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
       </head>
       <body className="min-h-screen flex flex-col bg-white text-black">
+        <AdSenseScript /> 
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
